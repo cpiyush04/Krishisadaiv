@@ -40,6 +40,7 @@ dependencies:
   
   # HTTP package for API calls to Hugging Face model
   http: ^1.1.2
+  speech_to_text: ^7.3.0
 
 dev_dependencies:
   flutter_test:
