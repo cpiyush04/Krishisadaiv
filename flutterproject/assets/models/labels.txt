@@ -1,0 +1,13 @@
+Corn___Common_Rust
+Corn___Gray_Leaf_Spot
+Corn___Healthy
+Invalid
+Potato___Early_Blight
+Potato___Healthy
+Potato___Late_Blight
+Rice___Brown_Spot
+Rice___Healthy
+Rice___Leaf_Blast
+Wheat___Brown_Rust
+Wheat___Healthy
+Wheat___Yellow_Rust
