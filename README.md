@@ -39,6 +39,7 @@ The application is **bilingual** (English and Hindi) for accessibility and usabi
 
 ## 🏗️ Project Structure
 
+```plaintext
 krishi-sadaiv/
 │── flutterproject
 │   │── lib/
@@ -61,6 +62,7 @@ krishi-sadaiv/
 │   │
 │   │── pubspec.yaml                 # Dependencies & assets configuration
 │── README.md                    # Project documentation
+```
 
 ---
 
@@ -84,8 +86,7 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^5.0.0          # Recommended linting rules
-s
-
+```
 ---
 
 ## 📲 Installation & Setup  
@@ -102,14 +103,17 @@ Follow these steps to set up the app locally:
 ```bash
 git clone https://github.com/cpiyush04/krishisadaiv.git
 cd krishisadaiv
+```
 
 ### 🔹 Install Dependencies 
 ```bash
 flutter pub get
+```
 
 ### 🔹 Run the App
 ```bash
 flutter run
+```
 
 
 
