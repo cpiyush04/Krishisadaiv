@@ -1,0 +1,219 @@
+{
+    "chemical_fertilizers": [
+        {
+            "fertilizer_name_type": "Nano Urea",
+            "active_component": "Nano Nitrogen Particles",
+            "primary_function": "Provides Nitrogen",
+            "suitable_crops": "Wheat, Rice, Sugarcane, Maize, Pulses, Vegetables.",
+            "application_timing_method": "Foliar Spray: 2 doses during active growth (e.g., tillering & pre-flowering).",
+            "government_incentive_scheme": "Indirect Promotion: PM-PRANAM scheme, Namo Drone Didi scheme."
+        },
+        {
+            "fertilizer_name_type": "Neem-Coated Urea",
+            "active_component": "Urea (46% N) with Neem Oil Coating",
+            "primary_function": "Provides slow-release Nitrogen",
+            "suitable_crops": "All crops, especially Sugarcane, Wheat, Rice, Maize.",
+            "application_timing_method": "Top Dressing: Applied to soil in 2-3 split doses during vegetative growth.",
+            "government_incentive_scheme": "Direct Heavy Subsidy: MRP fixed at \u20b9242 per 45 kg bag."
+        },
+        {
+            "fertilizer_name_type": "Diammonium Phosphate (DAP)",
+            "active_component": "18% N, 46% P\u2082O\u2085",
+            "primary_function": "Provides Phosphorus & starter Nitrogen",
+            "suitable_crops": "All crops, for root development.",
+            "application_timing_method": "Basal Application ONLY: Applied to soil once, at or before sowing.",
+            "government_incentive_scheme": "Nutrient Based Subsidy (NBS) Scheme: Subsidy on nutrient content keeps MRP affordable."
+        },
+        {
+            "fertilizer_name_type": "NPK Complexes",
+            "active_component": "Varies (e.g., 12:32:16)",
+            "primary_function": "Provides balanced N, P, & K",
+            "suitable_crops": "Depends on grade; for all crops.",
+            "application_timing_method": "Basal Application ONLY: Applied to soil once, at or before sowing.",
+            "government_incentive_scheme": "Nutrient Based Subsidy (NBS) Scheme: Subsidy on N, P, K content."
+        },
+        {
+            "fertilizer_name_type": "Muriate of Potash (MOP)",
+            "active_component": "60% K\u2082O",
+            "primary_function": "Provides Potassium",
+            "suitable_crops": "Potato, Sugarcane, Banana, Fruits, Vegetables.",
+            "application_timing_method": "Basal Application ONLY: Applied to soil once, at or before sowing.",
+            "government_incentive_scheme": "Nutrient Based Subsidy (NBS) Scheme: Subsidy on Potassium content."
+        },
+        {
+            "fertilizer_name_type": "Single Super Phosphate (SSP)",
+            "active_component": "16% P\u2082O\u2085, 11% S, 21% Ca",
+            "primary_function": "Provides Phosphorus & Sulphur",
+            "suitable_crops": "Oilseeds (Mustard), Pulses, Groundnut.",
+            "application_timing_method": "Basal Application ONLY: Applied to soil once, at or before sowing.",
+            "government_incentive_scheme": "Nutrient Based Subsidy (NBS) Scheme: Subsidy on Phosphorus content."
+        }
+    ],
+    "biological_fertilizers": [
+        {
+            "fertilizer_name_type": "Nitrogen-Fixing Biofertilizer (for Legumes)",
+            "active_component": "Rhizobium bacteria",
+            "primary_function": "Converts atmospheric Nitrogen",
+            "suitable_crops": "Legumes ONLY: Gram, Lentil, Pea, Soybean.",
+            "application_timing_method": "Seed Treatment: Coated on seeds before sowing.",
+            "government_incentive_scheme": "General Promotion: Supported under organic farming schemes like PKVY and NMNF."
+        },
+        {
+            "fertilizer_name_type": "Nitrogen-Fixing Biofertilizer (for Cereals)",
+            "active_component": "Azotobacter, Azospirillum bacteria",
+            "primary_function": "Converts atmospheric Nitrogen",
+            "suitable_crops": "Non-Legumes: Wheat, Rice, Maize, Sugarcane.",
+            "application_timing_method": "Seed/Seedling/Soil Treatment: Applied before or during planting.",
+            "government_incentive_scheme": "Supported under schemes like PKVY and NMNF which encourage replacing chemical inputs. Subsidies are often available through state agriculture departments."
+        },
+        {
+            "fertilizer_name_type": "Phosphate Solubilizing Biofertilizer (PSB)",
+            "active_component": "Bacillus, Pseudomonas bacteria",
+            "primary_function": "Makes locked soil Phosphorus available",
+            "suitable_crops": "All crops.",
+            "application_timing_method": "Seed/Soil Treatment: Applied before or during planting.",
+            "government_incentive_scheme": "Supported under schemes like PKVY and NMNF which encourage replacing chemical inputs. Subsidies are often available through state agriculture departments."
+        },
+        {
+            "fertilizer_name_type": "Potash Mobilizing Biofertilizer (KMB)",
+            "active_component": "Frateuria aurantia bacteria",
+            "primary_function": "Makes locked soil Potassium available",
+            "suitable_crops": "All crops, especially Potato, Sugarcane.",
+            "application_timing_method": "Seed/Soil Treatment: Applied before or during planting.",
+            "government_incentive_scheme": "Supported under schemes like PKVY and NMNF which encourage replacing chemical inputs. Subsidies are often available through state agriculture departments."
+        },
+        {
+            "fertilizer_name_type": "Zinc Solubilizing Biofertilizer (ZSB)",
+            "active_component": "Bacillus, Thiobacillus bacteria",
+            "primary_function": "Makes locked soil Zinc available",
+            "suitable_crops": "All crops, especially Rice, Maize, Wheat.",
+            "application_timing_method": "Seed/Soil Treatment: Applied before or during planting.",
+            "government_incentive_scheme": "Supported under schemes like PKVY and NMNF which encourage replacing chemical inputs. Subsidies are often available through state agriculture departments."
+        },
+        {
+            "fertilizer_name_type": "Azolla Biofertilizer",
+            "active_component": "Azolla pinnata (Water Fern)",
+            "primary_function": "Converts atmospheric Nitrogen in water",
+            "suitable_crops": "Exclusively for Rice (in flooded paddies).",
+            "application_timing_method": "Field Inoculation: Added to standing water in paddy fields.",
+            "government_incentive_scheme": "Supported under schemes like PKVY and NMNF which encourage replacing chemical inputs. Subsidies are often available through state agriculture departments."
+        },
+        {
+            "fertilizer_name_type": "Plant Growth Promoting Bio-agent (PGPB)",
+            "active_component": "Trichoderma species (Fungus)",
+            "primary_function": "Controls root diseases, promotes growth",
+            "suitable_crops": "Pulses, Vegetables, Oilseeds.",
+            "application_timing_method": "Seed/Soil Treatment: Applied before or during planting.",
+            "government_incentive_scheme": "Supported under schemes like PKVY and NMNF which encourage replacing chemical inputs. Subsidies are often available through state agriculture departments."
+        }
+    ],
+    
+    "rasayanik_urvarak": [
+        {
+            "urvarak_ka_naam_prakar": "नैनो यूरिया",
+            "sakriya_ghatak": "नैनो नाइट्रोजन कण",
+            "mukhya_karya": "नाइट्रोजन प्रदान करता है",
+            "upayukt_faslein": "गेहूं, चावल, गन्ना, मक्का, दालें, सब्जियां।",
+            "upyog_ka_samay_vidhi": "पर्णीय छिड़काव: सक्रिय वृद्धि के दौरान 2 खुराक (जैसे, कल्ले निकलते समय और फूल आने से पहले)।",
+            "sarkari_protsahan_yojana": "अप्रत्यक्ष प्रोत्साहन: पीएम-प्रणाम योजना, नमो ड्रोन दीदी योजना।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "नीम-लेपित यूरिया",
+            "sakriya_ghatak": "यूरिया (46% N) नीम तेल कोटिंग के साथ",
+            "mukhya_karya": "धीरे-धीरे रिलीज होने वाला नाइट्रोजन प्रदान करता है",
+            "upayukt_faslein": "सभी फसलें, विशेषकर गन्ना, गेहूं, चावल, मक्का।",
+            "upyog_ka_samay_vidhi": "टॉप ड्रेसिंग: वानस्पतिक वृद्धि के दौरान 2-3 विभाजित खुराकों में मिट्टी में दिया जाता है।",
+            "sarkari_protsahan_yojana": "प्रत्यक्ष भारी सब्सिडी: एमआरपी ₹242 प्रति 45 किलो बैग पर तय है।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "डाई-अमोनियम फॉस्फेट (DAP)",
+            "sakriya_ghatak": "18% N, 46% P₂O₅",
+            "mukhya_karya": "फॉस्फोरस और स्टार्टर नाइट्रोजन प्रदान करता है",
+            "upayukt_faslein": "सभी फसलें, जड़ों के विकास के लिए।",
+            "upyog_ka_samay_vidhi": "केवल बेसल एप्लीकेशन: बुवाई के समय या उससे ठीक पहले मिट्टी में एक बार डाला जाता है।",
+            "sarkari_protsahan_yojana": "पोषक तत्व आधारित सब्सिडी (NBS) योजना: पोषक तत्वों पर सब्सिडी एमआरपी को किफायती रखती है।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "एनपीके कॉम्प्लेक्स (NPK Complexes)",
+            "sakriya_ghatak": "विभिन्न (जैसे, 12:32:16)",
+            "mukhya_karya": "संतुलित N, P, और K प्रदान करता है",
+            "upayukt_faslein": "ग्रेड पर निर्भर करता है; सभी फसलों के लिए।",
+            "upyog_ka_samay_vidhi": "केवल बेसल एप्लीकेशन: बुवाई के समय या उससे ठीक पहले मिट्टी में एक बार डाला जाता है।",
+            "sarkari_protsahan_yojana": "पोषक तत्व आधारित सब्सिडी (NBS) योजना: N, P, K की मात्रा पर सब्सिडी।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "म्यूरेट ऑफ पोटाश (MOP)",
+            "sakriya_ghatak": "60% K₂O",
+            "mukhya_karya": "पोटेशियम प्रदान करता है",
+            "upayukt_faslein": "आलू, गन्ना, केला, फल, सब्जियां।",
+            "upyog_ka_samay_vidhi": "केवल बेसल एप्लीकेशन: बुवाई के समय या उससे ठीक पहले मिट्टी में एक बार डाला जाता है।",
+            "sarkari_protsahan_yojana": "पोषक तत्व आधारित सब्सिडी (NBS) योजना: पोटेशियम की मात्रा पर सब्सिडी।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "सिंगल सुपर फॉस्फेट (SSP)",
+            "sakriya_ghatak": "16% P₂O₅, 11% S, 21% Ca",
+            "mukhya_karya": "फॉस्फोरस और सल्फर प्रदान करता है",
+            "upayukt_faslein": "तिलहन (सरसों), दालें, मूंगफली।",
+            "upyog_ka_samay_vidhi": "केवल बेसल एप्लीकेशन: बुवाई के समय या उससे ठीक पहले मिट्टी में एक बार डाला जाता है।",
+            "sarkari_protsahan_yojana": "पोषक तत्व आधारित सब्सिडी (NBS) योजना: फॉस्फोरस की मात्रा पर सब्सिडी।"
+        }
+    ],
+    "jaivik_urvarak": [
+        {
+            "urvarak_ka_naam_prakar": "नाइट्रोजन-फिक्सिंग जैवउर्वरक (फलीदार फसलों के लिए)",
+            "sakriya_ghatak": "राइजोबियम बैक्टीरिया",
+            "mukhya_karya": "वायुमंडलीय नाइट्रोजन को परिवर्तित करता है",
+            "upayukt_faslein": "केवल फलीदार फसलें: चना, मसूर, मटर, सोयाबीन।",
+            "upyog_ka_samay_vidhi": "बीज उपचार: बुवाई से पहले बीजों पर लेप किया जाता है।",
+            "sarkari_protsahan_yojana": "सामान्य प्रोत्साहन: पीकेवीवाई और एनएमएनएफ जैसी जैविक खेती योजनाओं के तहत समर्थित।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "नाइट्रोजन-फिक्सिंग जैवउर्वरक (अनाज के लिए)",
+            "sakriya_ghatak": "एज़ोटोबैक्टर, एज़ोस्पिरिलम बैक्टीरिया",
+            "mukhya_karya": "वायुमंडलीय नाइट्रोजन को परिवर्तित करता है",
+            "upayukt_faslein": "गैर-फलीदार फसलें: गेहूं, चावल, मक्का, गन्ना।",
+            "upyog_ka_samay_vidhi": "बीज/पौध/मृदा उपचार: रोपण से पहले या उसके दौरान लगाया जाता है।",
+            "sarkari_protsahan_yojana": "पीकेवीवाई और एनएमएनएफ जैसी जैविक खेती योजनाओं के तहत समर्थित"
+        },
+        {
+            "urvarak_ka_naam_prakar": "फॉस्फेट सोल्यूबिलाइजिंग जैवउर्वरक (PSB)",
+            "sakriya_ghatak": "बैसिलस, स्यूडोमोनास बैक्टीरिया",
+            "mukhya_karya": "मिट्टी में बंद फॉस्फोरस को उपलब्ध कराता है",
+            "upayukt_faslein": "सभी फसलें।",
+            "upyog_ka_samay_vidhi": "बीज/मृदा उपचार: रोपण से पहले या उसके दौरान लगाया जाता है।",
+            "sarkari_protsahan_yojana": "पीकेवीवाई और एनएमएनएफ जैसी जैविक खेती योजनाओं के तहत समर्थित।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "पोटाश मोबिलाइजिंग जैवउर्वरक (KMB)",
+            "sakriya_ghatak": "फ्रेटेरिया ऑरेंटिया बैक्टीरिया",
+            "mukhya_karya": "मिट्टी में बंद पोटेशियम को उपलब्ध कराता है",
+            "upayukt_faslein": "सभी फसलें, विशेषकर आलू, गन्ना।",
+            "upyog_ka_samay_vidhi": "बीज/मृदा उपचार: रोपण से पहले या उसके दौरान लगाया जाता है।",
+            "sarkari_protsahan_yojana": "पीकेवीवाई और एनएमएनएफ जैसी जैविक खेती योजनाओं के तहत समर्थित।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "जिंक सोल्यूबिलाइजिंग जैवउर्वरक (ZSB)",
+            "sakriya_ghatak": "बैसिलस, थायोबैसिलस बैक्टीरिया",
+            "mukhya_karya": "मिट्टी में बंद जिंक को उपलब्ध कराता है",
+            "upayukt_faslein": "सभी फसलें, विशेषकर चावल, मक्का, गेहूं।",
+            "upyog_ka_samay_vidhi": "बीज/मृदा उपचार: रोपण से पहले या उसके दौरान लगाया जाता है।",
+            "sarkari_protsahan_yojana": "पीकेवीवाई और एनएमएनएफ जैसी जैविक खेती योजनाओं के तहत समर्थित।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "अजोला जैवउर्वरक",
+            "sakriya_ghatak": "अजोला पिनाटा (वाटर फर्न)",
+            "mukhya_karya": "पानी में वायुमंडलीय नाइट्रोजन को परिवर्तित करता है",
+            "upayukt_faslein": "विशेष रूप से चावल के लिए (बाढ़ वाले धान के खेतों में)।",
+            "upyog_ka_samay_vidhi": "खेत में टीकाकरण: धान के खेतों में खड़े पानी में मिलाया जाता है।",
+            "sarkari_protsahan_yojana": "पीकेवीवाई और एनएमएनएफ जैसी जैविक खेती योजनाओं के तहत समर्थित।"
+        },
+        {
+            "urvarak_ka_naam_prakar": "प्लांट ग्रोथ प्रमोटिंग बायो-एजेंट (PGPB)",
+            "sakriya_ghatak": "ट्राइकोडर्मा प्रजाति (फंगस)",
+            "mukhya_karya": "जड़ों के रोगों को नियंत्रित करता है, वृद्धि को बढ़ावा देता है",
+            "upayukt_faslein": "दालें, सब्जियां, तिलहन।",
+            "upyog_ka_samay_vidhi": "बीज/मृदा उपचार: रोपण से पहले या उसके दौरान लगाया जाता है।",
+            "sarkari_protsahan_yojana": "पीकेवीवाई और एनएमएनएफ जैसी जैविक खेती योजनाओं के तहत समर्थित।"
+        }
+    ]
+}

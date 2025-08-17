@@ -40,6 +40,10 @@ dependencies:
   
   # HTTP package for API calls to Hugging Face model
   http: ^1.1.2
+  geolocator: ^12.0.0
+  shared_preferences: ^2.2.3
+  intl: ^0.19.0
+  connectivity_plus: ^6.0.3
   speech_to_text: ^7.3.0
   pytorch_lite: ^4.3.2
   image: ^4.5.4
@@ -70,6 +74,10 @@ flutter:
   assets:
     - assets/models/model.ptl
     - assets/models/labels.txt
+    - assets/faqs.json
+    - assets/msp.json
+    - assets/diseases.json
+    - assets/fertilizers.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

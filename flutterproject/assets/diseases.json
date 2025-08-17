@@ -1,0 +1,163 @@
+{
+    "crop_statuses_english": [
+      {
+        "id": 1,
+        "item_name": "Corn___Common_Rust",
+        "description": "A fungal disease appearing as small, cinnamon-brown, powdery, oval-shaped spots (pustules) on both sides of the leaves. It thrives in cool, moist weather.",
+        "detailed_action": "• Use resistant hybrid varieties for your region.\n• Practice crop rotation with non-host crops like soybeans or legumes.\n• Ensure proper plant spacing to promote good air circulation.\n• Avoid excessive nitrogen fertilization, which can make plants more susceptible."
+      },
+      {
+        "id": 2,
+        "item_name": "Corn___Gray_Leaf_Spot",
+        "description": "This fungal disease creates long, narrow, rectangular, greyish-tan spots that are limited by the leaf veins. It is severe in warm, humid, and overcast conditions.",
+        "detailed_action": "• Planting resistant hybrids is the most effective control method.\n• Practice crop rotation to reduce the fungal population in the soil.\n• Manage field residue by tilling it under the soil.\n• Manage irrigation to avoid prolonged periods of leaf wetness."
+      },
+      {
+        "id": 3,
+        "item_name": "Corn___Healthy",
+        "description": "The plant shows vigorous growth with strong stalks and uniformly green leaves, free from any spots, lesions, or discoloration.",
+        "detailed_action": "• Continue to provide balanced nutrition based on soil test results.\n• Ensure consistent watering, especially during critical growth stages.\n• Regularly scout the field to catch any early signs of pests or diseases.\n• Keep the field weed-free to reduce competition for resources."
+      },
+      {
+        "id": 4,
+        "item_name": "Invalid",
+        "description": "Problem in analyzing the image. This could be because the picture was out of focus, taken in poor light, or was not of a plant part.",
+        "detailed_action": "• Take a new picture. For best results:\n1. Ensure the leaf is flat and in sharp focus.\n2. Use bright, natural daylight but avoid harsh shadows.\n3. Place the leaf against a plain background (like soil or paper)."
+      },
+      {
+        "id": 5,
+        "item_name": "Potato___Early_Blight",
+        "description": "Caused by a fungus, this appears as dark brown to black spots on lower leaves. The spots often have a characteristic \"bull's-eye\" pattern with concentric rings.",
+        "detailed_action": "• Use certified disease-free seeds/tubers.\n• Practice a 2-3 year crop rotation, avoiding tomatoes and eggplants.\n• Ensure balanced plant nutrition, especially adequate potassium.\n• Water at the base of the plant to keep the leaves as dry as possible."
+      },
+      {
+        "id": 6,
+        "item_name": "Potato___Healthy",
+        "description": "The plant has a lush, green canopy with no yellowing, spots, or wilting leaves. Stems are sturdy and the plant appears vigorous.",
+        "detailed_action": "• Continue proper hilling to protect developing tubers from sunlight and pests.\n• Maintain consistent soil moisture to prevent stress.\n• Monitor for pests like aphids that can transmit viruses.\n• Ensure the plant has sufficient nutrients for tuber development."
+      },
+      {
+        "id": 7,
+        "item_name": "Potato___Late_Blight",
+        "description": "A highly destructive disease starting as pale green, water-soaked spots. These spots quickly turn dark brown/black, with a white mold on leaf undersides in high humidity.",
+        "detailed_action": "• Plant resistant varieties and certified disease-free tubers.\n• Maintain proper hilling to protect tubers from spores washed down from the leaves.\n• Ensure good field drainage and air circulation.\n• Use preventive fungicide sprays, especially when cool, moist weather is forecasted."
+      },
+      {
+        "id": 8,
+        "item_name": "Rice___Brown_Spot",
+        "description": "This fungal disease causes oval-shaped, brown spots with a grey center on leaves and grains. It is often a sign of nutrient deficiency or other stresses.",
+        "detailed_action": "• Use certified clean and healthy seeds.\n• Treat seeds with a suitable fungicide before sowing.\n• Ensure balanced soil nutrition (especially Potassium, Silicon, and Manganese).\n• Maintain proper water levels and avoid periods of drought stress."
+      },
+      {
+        "id": 9,
+        "item_name": "Rice___Healthy",
+        "description": "The plant exhibits bright green, erect leaves. The stand is uniform across the paddy, with no signs of spots, lesions, or discoloration.",
+        "detailed_action": "• Maintain appropriate water levels according to the crop's growth stage.\n• Apply nitrogen fertilizer in splits to avoid overgrowth and disease susceptibility.\n• Regularly monitor for common pests like stem borers or plant hoppers.\n• Keep bunds clean to reduce pest and disease habitats."
+      },
+      {
+        "id": 10,
+        "item_name": "Rice___Leaf_Blast",
+        "description": "A major rice disease creating diamond-shaped spots on leaves with grayish centers and brown borders. It can severely impact yield if it infects the plant's neck.",
+        "detailed_action": "• Sowing resistant rice varieties is the most effective and economical method.\n• Avoid excessive use of nitrogen fertilizer, which promotes disease growth.\n• Manage water properly; intermittent flooding can be better than continuous deep water.\n• Destroy infected crop residue after harvest to reduce the source of infection."
+      },
+      {
+        "id": 11,
+        "item_name": "Wheat___Brown_Rust",
+        "description": "This disease appears as small, circular, orange-brown powdery pustules scattered randomly on the upper surface of the leaves.",
+        "detailed_action": "• Sow recommended resistant varieties for your area.\n• Early sowing can sometimes help the crop mature before peak infection periods.\n• Apply a balanced dose of fertilizers; avoid excessive nitrogen.\n• Monitor the crop and apply foliar fungicides at the first sign of disease."
+      },
+      {
+        "id": 12,
+        "item_name": "Wheat___Healthy",
+        "description": "The crop shows a uniform stand with a healthy green color. The leaves are free of any pustules, spots, or stripes.",
+        "detailed_action": "• Ensure irrigation is applied at critical growth stages (e.g., Crown Root Initiation).\n• Use balanced fertilizers as per soil test recommendations.\n• Monitor the crop closely for any initial signs of rust or other diseases, especially after a change in weather."
+      },
+      {
+        "id": 13,
+        "item_name": "Wheat___Yellow_Rust",
+        "description": "This rust is identified by yellow to orange-yellow pustules that form long, distinct stripes along the leaf veins. It prefers cooler temperatures.",
+        "detailed_action": "• Growing resistant varieties is the most crucial control measure.\n• Follow recommended sowing times for your region.\n• Remove and destroy any volunteer wheat plants that can host the disease between seasons.\n• Use recommended fungicides promptly if disease is detected."
+      }
+    ],
+    
+    "crop_statuses_hindi": [
+      {
+        "id": 1,
+        "item_name": "मक्का - सामान्य रस्ट",
+        "description": "यह एक फफूंद जनित रोग है जिसमें पत्तियों के दोनों तरफ छोटे, दालचीनी-भूरे, पाउडर जैसे, अंडाकार धब्बे (पस्ट्यूल) दिखाई देते हैं। यह ठंडे और नम मौसम में पनपता है।",
+        "detailed_action": "• अपने क्षेत्र के लिए प्रतिरोधी हाइब्रिड किस्मों का प्रयोग करें।\n• सोयाबीन या फलियों जैसी गैर-मेजबान फसलों के साथ फसल चक्र अपनाएं।\n• अच्छे वायु संचार को बढ़ावा देने के लिए पौधों के बीच उचित दूरी सुनिश्चित करें।\n• अत्यधिक नाइट्रोजन उर्वरक से बचें, जो पौधों को अधिक संवेदनशील बना सकता है।"
+      },
+      {
+        "id": 2,
+        "item_name": "मक्का - ग्रे लीफ स्पॉट",
+        "description": "यह फफूंद जनित रोग लंबी, संकरी, आयताकार, स्लेटी-भूरी धारियां बनाता है जो पत्ती की नसों तक ही सीमित रहती हैं। यह गर्म, आर्द्र और बादल छाए रहने की स्थिति में गंभीर होता है।",
+        "detailed_action": "• प्रतिरोधी हाइब्रिड लगाना सबसे प्रभावी नियंत्रण उपाय है।\n• मिट्टी में फफूंद की आबादी को कम करने के लिए फसल चक्र अपनाएं।\n• खेत के अवशेषों को मिट्टी के नीचे जोत कर प्रबंधित करें।\n• सिंचाई का प्रबंधन ऐसे करें कि पत्तियां लंबे समय तक गीली न रहें।"
+      },
+      {
+        "id": 3,
+        "item_name": "मक्का - स्वस्थ",
+        "description": "पौधा मजबूत तनों और एक समान हरी पत्तियों के साथ अच्छी वृद्धि दिखा रहा है, जो किसी भी धब्बे, घाव या मलिनकिरण से मुक्त हैं।",
+        "detailed_action": "• मिट्टी परीक्षण के परिणामों के आधार पर संतुलित पोषण प्रदान करना जारी रखें।\n• विशेष रूप से महत्वपूर्ण विकास चरणों के दौरान लगातार और पर्याप्त सिंचाई सुनिश्चित करें।\n• कीटों या बीमारियों के किसी भी शुरुआती लक्षण को पकड़ने के लिए नियमित रूप से खेत की निगरानी करें।\n• संसाधनों के लिए प्रतिस्पर्धा कम करने के लिए खेत को खरपतवार मुक्त रखें।"
+      },
+      {
+        "id": 4,
+        "item_name": "अमान्य",
+        "description": "इस परिणाम का मतलब है कि ऐप तस्वीर का विश्लेषण नहीं कर सका। ऐसा इसलिए हो सकता है क्योंकि तस्वीर धुंधली थी, कम रोशनी में ली गई थी, या किसी पौधे के हिस्से की नहीं थी।",
+        "detailed_action": "• कृपया एक नई तस्वीर लें। सर्वोत्तम परिणामों के लिए:\n1. सुनिश्चित करें कि पत्ती सपाट और पूरी तरह फोकस में हो।\n2. तेज, प्राकृतिक दिन के उजाले का उपयोग करें लेकिन तेज छाया से बचें।\n3. पत्ती को किसी सादे बैकग्राउंड (जैसे मिट्टी या कागज) के सामने रखें।"
+      },
+      {
+        "id": 5,
+        "item_name": "आलू - अगेती झुलसा",
+        "description": "फफूंद के कारण, यह निचली पत्तियों पर गहरे भूरे से काले धब्बों के रूप में दिखाई देता है। धब्बों में अक्सर 'एक के अंदर एक गोल छल्लों' का विशिष्ट पैटर्न होता है।",
+        "detailed_action": "• प्रमाणित रोग-मुक्त बीज/कंद का प्रयोग करें।\n• 2-3 साल का फसल चक्र अपनाएं, टमाटर और बैंगन से बचें।\n• संतुलित पौधे पोषण सुनिश्चित करें, विशेष रूप से पर्याप्त पोटेशियम।\n• पत्तियों को यथासंभव सूखा रखने के लिए पौधे के आधार पर पानी दें।"
+      },
+      {
+        "id": 6,
+        "item_name": "आलू - स्वस्थ",
+        "description": "पौधे में बिना किसी पीलेपन, धब्बे या मुरझाए पत्तों के एक हरी-भरी छतरी होती है। तने मजबूत होते हैं और पौधा जोरदार दिखाई देता है।",
+        "detailed_action": "• विकसित हो रहे कंदों को धूप और कीटों से बचाने के लिए उचित मेड़ चढ़ाना जारी रखें।\n• तनाव को रोकने के लिए मिट्टी में लगातार नमी बनाए रखें।\n• एफिड्स जैसे कीटों की निगरानी करें जो वायरस फैला सकते हैं।\n• सुनिश्चित करें कि पौधे को कंद के विकास के लिए पर्याप्त पोषक तत्व मिलें।"
+      },
+      {
+        "id": 7,
+        "item_name": "आलू - पछेती झुलसा",
+        "description": "एक बहुत ही विनाशकारी बीमारी जो हल्के हरे, पानी से भीगे धब्बों के रूप में शुरू होती है। ये धब्बे जल्दी से गहरे भूरे/काले हो जाते हैं, और उच्च आर्द्रता में पत्ती के नीचे सफेद फफूंद दिखती है।",
+        "detailed_action": "• प्रतिरोधी किस्में और प्रमाणित रोग-मुक्त कंद लगाएं।\n• पत्तियों से धुल कर आने वाले बीजाणुओं से कंदों की रक्षा के लिए उचित मेड़ चढ़ाना बनाए रखें।\n• खेत में अच्छी जल निकासी और वायु संचार सुनिश्चित करें।\n• विशेष रूप से जब ठंडे, नम मौसम का पूर्वानुमान हो, तो निवारक फफूंदनाशक स्प्रे का उपयोग करें।"
+      },
+      {
+        "id": 8,
+        "item_name": "धान - भूरा धब्बा",
+        "description": "यह फफूंद जनित रोग पत्तियों और दानों पर अंडाकार, भूरे रंग के धब्बे बनाता है जिनका केंद्र स्लेटी होता है। यह अक्सर पोषक तत्वों की कमी या अन्य तनावों का संकेत होता है।",
+        "detailed_action": "• प्रमाणित स्वच्छ और स्वस्थ बीजों का प्रयोग करें।\n• बुवाई से पहले बीजों को उपयुक्त फफूंदनाशक से उपचारित करें।\n• संतुलित मिट्टी पोषण सुनिश्चित करें (विशेषकर पोटेशियम, सिलिकॉन और मैंगनीज)।\n• उचित जल स्तर बनाए रखें और सूखे के तनाव की अवधि से बचें।"
+      },
+      {
+        "id": 9,
+        "item_name": "धान - स्वस्थ",
+        "description": "पौधा चमकीले हरे, सीधे पत्ते प्रदर्शित करता है। खेत में पौधे एक समान हैं, जिनमें धब्बे, घाव या मलिनकिरण के कोई लक्षण नहीं हैं।",
+        "detailed_action": "• फसल के विकास चरण के अनुसार उचित जल स्तर बनाए रखें।\n• अत्यधिक वृद्धि और रोग संवेदनशीलता से बचने के लिए नाइट्रोजन उर्वरक को किश्तों में डालें।\n• तना छेदक या प्लांट हॉपर जैसे सामान्य कीटों के लिए नियमित रूप से निगरानी करें।\n• कीट और रोग के आवास को कम करने के लिए मेड़ों को साफ रखें।"
+      },
+      {
+        "id": 10,
+        "item_name": "धान - लीफ ब्लास्ट (झोंका रोग)",
+        "description": "एक प्रमुख धान रोग जो पत्तियों पर हीरे के आकार के धब्बे बनाता है जिसमें केंद्र स्लेटी और किनारे भूरे होते हैं। यदि यह पौधे की गर्दन को संक्रमित करता है तो यह उपज पर गंभीर प्रभाव डाल सकता है।",
+        "detailed_action": "• प्रतिरोधी धान की किस्मों की बुवाई सबसे प्रभावी और किफायती तरीका है।\n• नाइट्रोजन उर्वरक के अत्यधिक उपयोग से बचें, जो रोग वृद्धि को बढ़ावा देता है।\n• पानी का उचित प्रबंधन करें; लगातार गहरे पानी की तुलना में रुक-रुक कर खेत भरना बेहतर हो सकता है।\n• संक्रमण के स्रोत को कम करने के लिए कटाई के बाद संक्रमित फसल अवशेषों को नष्ट कर दें।"
+      },
+      {
+        "id": 11,
+        "item_name": "गेहूँ - भूरा रस्ट (पर्ण रतुआ)",
+        "description": "यह रोग पत्तियों की ऊपरी सतह पर बेतरतीब ढंग से बिखरे हुए छोटे, गोलाकार, नारंगी-भूरे पाउडर जैसे पस्ट्यूल के रूप में दिखाई देता है।",
+        "detailed_action": "• अपने क्षेत्र के लिए अनुशंसित प्रतिरोधी किस्मों की बुवाई करें।\n• अगेती बुवाई कभी-कभी फसल को चरम संक्रमण अवधि से पहले पकने में मदद कर सकती है।\n• उर्वरकों की संतुलित खुराक लागू करें; अत्यधिक नाइट्रोजन से बचें।\n• फसल की निगरानी करें और रोग का पहला संकेत मिलते ही पर्णीय फफूंदनाशकों का छिड़काव करें।"
+      },
+      {
+        "id": 12,
+        "item_name": "गेहूँ - स्वस्थ",
+        "description": "फसल एक समान स्वस्थ हरे रंग की दिखती है। पत्तियां किसी भी पस्ट्यूल, धब्बे या धारियों से मुक्त होती हैं।",
+        "detailed_action": "• सुनिश्चित करें कि सिंचाई महत्वपूर्ण विकास चरणों (जैसे क्राउन रूट दीक्षा) पर लागू हो।\n• मिट्टी परीक्षण की सिफारिशों के अनुसार संतुलित उर्वरकों का उपयोग करें।\n• विशेष रूप से मौसम में बदलाव के बाद, रस्ट या अन्य बीमारियों के किसी भी शुरुआती संकेत के लिए फसल की बारीकी से निगरानी करें।"
+      },
+      {
+        "id": 13,
+        "item_name": "गेहूँ - पीला रस्ट (धारीदार रतुआ)",
+        "description": "इस रस्ट की पहचान पीले से नारंगी-पीले पस्ट्यूल से होती है जो पत्ती की नसों के साथ लंबी, अलग धारियां बनाते हैं। यह ठंडे तापमान को पसंद करता है।",
+        "detailed_action": "• प्रतिरोधी किस्में उगाना सबसे महत्वपूर्ण नियंत्रण उपाय है।\n• अपने क्षेत्र के लिए अनुशंसित बुवाई के समय का पालन करें।\n• किसी भी स्वयंसेवी गेहूं के पौधों को हटा दें और नष्ट कर दें जो मौसमों के बीच बीमारी की मेजबानी कर सकते हैं।\n• यदि रोग का पता चलता है तो अनुशंसित फफूंदनाशकों का तुरंत उपयोग करें।"
+      }
+    ]
+  }

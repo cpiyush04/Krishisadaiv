@@ -1,0 +1,307 @@
+{
+  "faq_english": [
+    {
+      "id": 1,
+      "category": "App Query",
+      "question": "What is the main purpose of the Krishi-Sadaiv app?",
+      "answer": "The Krishi-Sadaiv app is designed to be a farmer's best friend. Its primary feature is to help you identify crop diseases simply by uploading a photo of the affected plant. It also provides preventive measures, updated MSP data, and local weather forecasts."
+    },
+    {
+      "id": 2,
+      "category": "App Query",
+      "question": "How do I check for a crop disease using the app?",
+      "answer": "It's simple! Tap on the 'Disease Detection' feature on the home screen. Grant camera/gallery access, take a clear photo of the diseased part of the plant (like a leaf or stem), and upload it. The app will analyze the image and provide results."
+    },
+    {
+      "id": 3,
+      "category": "App Query",
+      "question": "What kind of photo gives the most accurate result?",
+      "answer": "For best results, take a clear, well-lit photo of the affected area against a neutral background. Ensure only the diseased leaf or stem is in focus. Avoid blurry images or photos taken from too far away."
+    },
+    {
+      "id": 4,
+      "category": "App Query",
+      "question": "What should I do if the app cannot identify the disease?",
+      "answer": "If the app can't make a determination (perhaps due to a poor-quality photo or a rare condition), we recommend trying again with a clearer picture. You can also consult a local agricultural extension officer for assistance."
+    },
+    {
+      "id": 5,
+      "category": "App Query",
+      "question": "How do I find the Minimum Support Price (MSP) for my crop?",
+      "answer": "Navigate to the 'MSP Rates' or 'Market Prices' section in the app. You can then select your state and the specific crop you are interested in to see the latest government-announced MSP."
+    },
+    {
+      "id": 6,
+      "category": "App Query",
+      "question": "How often is the weather information updated?",
+      "answer": "The weather data is updated multiple times a day to provide you with the most current forecast, including temperature, humidity, and rainfall predictions for your chosen location."
+    },
+    {
+      "id": 7,
+      "category": "App Query",
+      "question": "How can I change the language in the app?",
+      "answer": "Go to the 'Settings' or 'Profile' menu within the app. You will find a 'Language' option where you can select your preferred language from the available choices."
+    },
+    {
+      "id": 8,
+      "category": "App Query",
+      "question": "The app is showing the wrong location. How do I fix it?",
+      "answer": "In the 'Settings' or on the main weather dashboard, you should see a 'Change Location' option. You can use this to manually search for and set your correct village, block, or district."
+    },
+    {
+      "id": 9,
+      "category": "App Query",
+      "question": "Do I need an active internet connection to use Krishi-Sadaiv?",
+      "answer": "Yes, an internet connection (Wi-Fi or mobile data) is required for most features, including disease detection, fetching MSP rates, and updating weather data, as the app needs to communicate with our servers."
+    },
+    {
+      "id": 10,
+      "category": "App Query",
+      "question": "Is the Krishi-Sadaiv app free to use?",
+      "answer": "Yes, all the core features of the app are completely free for all farmers to use."
+    },
+    {
+      "id": 11,
+      "category": "Agriculture Query",
+      "question": "My crop's leaves are turning yellow. Is it always a disease?",
+      "answer": "Not necessarily. While some diseases cause yellowing (chlorosis), it is more commonly a sign of nutrient deficiency. Lack of Nitrogen (N) often causes uniform yellowing, while lack of Iron (Fe) can cause yellowing in new leaves with green veins. It's important to check for pests and other disease signs as well."
+    },
+    {
+      "id": 12,
+      "category": "Agriculture Query",
+      "question": "How do I know which fertilizer (like Urea, DAP, Potash) to use and in what quantity?",
+      "answer": "The best way is to get your soil tested. A soil health card will tell you exactly which nutrients your soil is lacking. Based on that report and your crop type, an agricultural expert can recommend the exact dosage (e.g., kg per acre) for basal application and top dressing. Applying fertilizer without a soil test can be wasteful and may even harm the soil."
+    },
+    {
+      "id": 13,
+      "category": "Agriculture Query",
+      "question": "What is seed treatment (`Beej Upchar`) and why is it so important?",
+      "answer": "Seed treatment is the process of applying chemicals or biological agents to seeds before sowing. It is a highly effective and low-cost method to protect the seeds and young seedlings from seed-borne and soil-borne diseases and pests, ensuring better germination and a healthier start for your crop."
+    },
+    {
+      "id": 14,
+      "category": "Agriculture Query",
+      "question": "The same disease keeps attacking my crop every single year. What can I do to break this cycle?",
+      "answer": "This often happens when disease-causing pathogens remain in the soil or plant debris. To break the cycle, you should practice crop rotation (don't plant the same crop family in the same place every year), deep plough the field in summer to expose pathogens to the sun, and always remove and destroy infected plant parts after harvest instead of leaving them in the field."
+    },
+    {
+      "id": 15,
+      "category": "Agriculture Query",
+      "question": "How can I manage weeds (`खरपतवार`) effectively?",
+      "answer": "An integrated approach is best. This includes manual weeding, using tools like a khurpi or wheel hoe, laying mulch (like straw) between crop rows to block sunlight, and practicing crop rotation. Herbicides (weed killers) can be used, but it's crucial to use the right one for your crop at the correct stage and dosage to avoid harming the main crop."
+    },
+    {
+      "id": 16,
+      "category": "Agriculture Query",
+      "question": "Is it safe to spray pesticides or fungicides when the crop is flowering?",
+      "answer": "You must be very careful. Spraying during peak flowering can harm beneficial insects like bees, which are essential for pollination. If spraying is absolutely necessary, it is best to do it in the late afternoon or evening when bee activity is low. Always read the chemical's label for specific instructions."
+    },
+    {
+      "id": 17,
+      "category": "Agriculture Query",
+      "question": "What is the difference between Kharif, Rabi, and Zaid crops?",
+      "answer": "These are cropping seasons based on the monsoon:\nKharif: Monsoon crops, sown in June-July and harvested in September-October (e.g., Rice, Maize, Cotton).\nRabi: Winter crops, sown in October-December and harvested in March-April (e.g., Wheat, Gram, Mustard).\nZaid: Summer crops, sown between Rabi and Kharif seasons from March-June (e.g., Watermelon, Cucumber, Moong)."
+    },
+    {
+      "id": 18,
+      "category": "Agriculture Query",
+      "question": "How can I tell the exact right time to harvest my crop?",
+      "answer": "Harvesting time is critical for yield and quality. It depends on the crop. For grains like wheat and rice, look for golden-yellow colour and hard, dry grains. For fruits and vegetables, look for the ideal size, colour, and firmness. Harvesting too early or too late can lead to significant losses."
+    },
+    {
+      "id": 19,
+      "category": "Agriculture Query",
+      "question": "How can I protect my harvested grains from pests and spoilage during storage?",
+      "answer": "First, ensure the grains are properly dried (moisture content below 12%). Store them in clean, dry, and airtight bags or bins (like Pusa Bins). Using dried neem leaves in the storage bags can naturally repel many storage pests."
+    },
+    {
+      "id": 20,
+      "category": "Agriculture Query",
+      "question": "What is organic farming (`Jaivik Kheti`)? Can I make a good profit from it?",
+      "answer": "Organic farming is a method that avoids the use of chemical fertilizers, pesticides, and GMOs. It relies on natural inputs like compost, cow dung manure (`gobar ki khaad`), and bio-pesticides. While yields might be slightly lower initially, the cost of cultivation is often less, and organic produce can fetch a premium price in the market, leading to good profitability."
+    },
+    {
+      "id": 21,
+      "category": "Agriculture Query",
+      "question": "Where can I get my soil and water tested?",
+      "answer": "You can get your soil and water tested at the Krishi Vigyan Kendra (KVK) in your district, the district agriculture department's laboratory, or at state agricultural universities. They provide a soil health card with detailed information."
+    },
+    {
+      "id": 22,
+      "category": "Agriculture Query",
+      "question": "Besides MSP, are there any government schemes for crop insurance?",
+      "answer": "Yes, the Pradhan Mantri Fasal Bima Yojana (PMFBY) is the main government scheme for crop insurance. It provides financial support to farmers suffering crop loss or damage arising from unforeseen events. You can enroll through your nearest bank or a Common Service Centre (CSC)."
+    },
+    {
+      "id": 23,
+      "category": "Agriculture Query",
+      "question": "How does drip irrigation (`टपक सिंचाई`) work and is it useful for my field?",
+      "answer": "Drip irrigation saves a significant amount of water by delivering it slowly and directly to the plant's roots through a network of pipes and emitters. It is highly efficient, reduces weed growth, and is very useful for row crops, orchards, and vegetable farming, especially in areas with water scarcity."
+    },
+    {
+      "id": 24,
+      "category": "Agriculture Query",
+      "question": "My farm animals are a good source of manure. How do I make good quality compost from it?",
+      "answer": "To make good compost, layer the animal manure with other organic materials like crop residues, dry leaves, and kitchen waste in a pit or a pile. Keep the pile moist (not wet) and turn it over every 15-20 days to allow for proper aeration. It will be ready in 3-4 months when it becomes dark, crumbly, and has an earthy smell."
+    },
+    {
+      "id": 25,
+      "category": "Agriculture Query",
+      "question": "The weather forecast shows a hailstorm or heavy rain is coming. Is there anything I can do to protect my standing crops?",
+      "answer": "For high-value crops, anti-hail nets can be a protective measure if installed beforehand. For heavy rains, ensuring your field has a proper drainage system is crucial to prevent waterlogging, which can damage the roots. If the crop is near maturity, an emergency, early harvest might be considered to save a portion of the yield."
+    }
+  ],
+  
+    "faq_hindi": [
+      {
+        "id": 1,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "कृषि-सदैव ऐप का मुख्य उद्देश्य क्या है?",
+        "answer": "कृषि-सदैव ऐप को किसानों का सबसे अच्छा दोस्त बनने के लिए डिज़ाइन किया गया है। इसकी मुख्य विशेषता यह है कि आप केवल प्रभावित पौधे की तस्वीर अपलोड करके फसल रोगों की पहचान कर सकते हैं। यह आपको रोकथाम के उपाय, नवीनतम न्यूनतम समर्थन मूल्य (MSP) डेटा और स्थानीय मौसम का पूर्वानुमान भी प्रदान करता है।"
+      },
+      {
+        "id": 2,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "मैं ऐप का उपयोग करके फसल रोग की जांच कैसे करूं?",
+        "answer": "यह बहुत आसान है! होम स्क्रीन पर 'रोग पहचान' (Disease Detection) सुविधा पर टैप करें। कैमरा/गैलरी की अनुमति दें, पौधे के रोगग्रस्त हिस्से (जैसे पत्ती या तना) की एक साफ तस्वीर लें और उसे अपलोड करें। ऐप तस्वीर का विश्लेषण करेगा और परिणाम बताएगा।"
+      },
+      {
+        "id": 3,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "किस तरह की फोटो से सबसे सटीक परिणाम मिलता है?",
+        "answer": "सर्वोत्तम परिणामों के लिए, प्रभावित क्षेत्र की एक साफ़, अच्छी रोशनी वाली तस्वीर लें। सुनिश्चित करें कि केवल रोगग्रस्त पत्ती या तना ही फोकस में हो। धुंधली या बहुत दूर से ली गई तस्वीरों से बचें।"
+      },
+      {
+        "id": 4,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "यदि ऐप मेरी तस्वीर से बीमारी की पहचान नहीं कर पाता है तो मुझे क्या करना चाहिए?",
+        "answer": "यदि ऐप किसी कारण (शायद खराब गुणवत्ता वाली तस्वीर या किसी दुर्लभ बीमारी) से पहचान नहीं कर पाता है, तो हम एक स्पष्ट तस्वीर के साथ फिर से प्रयास करने की सलाह देते हैं। आप सहायता के लिए स्थानीय कृषि विस्तार अधिकारी से भी सलाह ले सकते हैं।"
+      },
+      {
+        "id": 5,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "मैं अपनी फसल के लिए न्यूनतम समर्थन मूल्य (MSP) कैसे ढूंढूं?",
+        "answer": "ऐप में 'एमएसपी रेट' या 'बाजार भाव' सेक्शन पर जाएं। वहां आप नवीनतम सरकारी एमएसपी देखने के लिए अपने राज्य और संबंधित फसल का चयन कर सकते हैं।"
+      },
+      {
+        "id": 6,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "मौसम की जानकारी कितनी बार अपडेट की जाती है?",
+        "answer": "मौसम का डेटा दिन में कई बार अपडेट किया जाता है ताकि आपको आपके चुने हुए स्थान के लिए तापमान, आर्द्रता और वर्षा की भविष्यवाणी सहित सबसे ताज़ा पूर्वानुमान प्रदान किया जा सके।"
+      },
+      {
+        "id": 7,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "मैं ऐप में भाषा कैसे बदल सकता हूँ?",
+        "answer": "ऐप के भीतर 'सेटिंग्स' या 'प्रोफाइल' मेनू पर जाएं। वहां आपको एक 'भाषा' (Language) का विकल्प मिलेगा जहां आप उपलब्ध विकल्पों में से अपनी पसंदीदा भाषा चुन सकते हैं।"
+      },
+      {
+        "id": 8,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "ऐप गलत स्थान दिखा रहा है। मैं इसे कैसे ठीक करूं?",
+        "answer": "'सेटिंग्स' में या मुख्य मौसम डैशबोर्ड पर, आपको 'स्थान बदलें' (Change Location) का विकल्प दिखना चाहिए। आप इसका उपयोग अपने सही गांव, ब्लॉक या जिले को मैन्युअल रूप से खोजने और सेट करने के लिए कर सकते हैं।"
+      },
+      {
+        "id": 9,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "क्या कृषि-सदैव का उपयोग करने के लिए इंटरनेट कनेक्शन की आवश्यकता है?",
+        "answer": "हां, अधिकांश सुविधाओं के लिए एक इंटरनेट कनेक्शन (वाई-फाई या मोबाइल डेटा) आवश्यक है, जिसमें रोग का पता लगाना, एमएसपी दरें प्राप्त करना और मौसम डेटा अपडेट करना शामिल है, क्योंकि ऐप को हमारे सर्वर के साथ संवाद करने की आवश्यकता होती है।"
+      },
+      {
+        "id": 10,
+        "category": "ऐप संबंधी प्रश्न",
+        "question": "क्या कृषि-सदैव ऐप का उपयोग निःशुल्क है?",
+        "answer": "हां, ऐप की सभी मुख्य सुविधाएं सभी किसानों के लिए उपयोग करने के लिए पूरी तरह से निःशुल्क हैं।"
+      },
+      {
+        "id": 11,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मेरी फसल के पत्ते पीले पड़ रहे हैं। क्या यह हमेशा एक बीमारी है?",
+        "answer": "ज़रूरी नहीं। हालांकि कुछ बीमारियों के कारण पत्ते पीले (क्लोरोसिस) हो जाते हैं, लेकिन यह आमतौर पर पोषक तत्वों की कमी का संकेत होता है। नाइट्रोजन (N) की कमी से अक्सर पत्ते पूरी तरह पीले हो जाते हैं, जबकि आयरन (Fe) की कमी से नई पत्तियों की नसें हरी रहती हैं और बाकी हिस्सा पीला हो जाता है। कीटों और बीमारी के अन्य लक्षणों की भी जांच करना महत्वपूर्ण है।"
+      },
+      {
+        "id": 12,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मुझे कैसे पता चलेगा कि कौन सा उर्वरक (जैसे यूरिया, डीएपी, पोटाश) और कितनी मात्रा में उपयोग करना है?",
+        "answer": "इसका सबसे अच्छा तरीका है अपनी मिट्टी की जांच करवाना। एक मृदा स्वास्थ्य कार्ड (Soil Health Card) आपको बताएगा कि आपकी मिट्टी में किन पोषक तत्वों की कमी है। उस रिपोर्ट और आपकी फसल के प्रकार के आधार पर, एक कृषि विशेषज्ञ आपको सही मात्रा (जैसे, किलो प्रति एकड़) की सिफारिश कर सकता है। बिना मिट्टी परीक्षण के उर्वरक डालना पैसे की बर्बादी हो सकती है और यह मिट्टी को नुकसान भी पहुंचा सकता है।"
+      },
+      {
+        "id": 13,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "बीज उपचार (Seed Treatment) क्या है और यह इतना महत्वपूर्ण क्यों है?",
+        "answer": "बीज उपचार बुवाई से पहले बीजों पर रासायनिक या जैविक एजेंट लगाने की प्रक्रिया है। यह बीजों और छोटे पौधों को बीज-जनित और मिट्टी-जनित रोगों और कीटों से बचाने का एक बहुत ही प्रभावी और कम लागत वाला तरीका है, जिससे बेहतर अंकुरण और आपकी फसल के लिए एक स्वस्थ शुरुआत सुनिश्चित होती है।"
+      },
+      {
+        "id": 14,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "एक ही बीमारी हर साल मेरी फसल पर हमला करती है। इस चक्र को रोकने के लिए मैं क्या कर सकता हूँ?",
+        "answer": "ऐसा अक्सर तब होता है जब रोग पैदा करने वाले रोगाणु मिट्टी या पौधों के मलबे में रह जाते हैं। इस चक्र को तोड़ने के लिए, आपको फसल चक्र अपनाना चाहिए (हर साल एक ही स्थान पर एक ही फसल परिवार न लगाएं), गर्मियों में खेत की गहरी जुताई करें ताकि रोगाणु धूप के संपर्क में आएं, और कटाई के बाद संक्रमित पौधों के हिस्सों को हमेशा हटा दें और नष्ट कर दें।"
+      },
+      {
+        "id": 15,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मैं खरपतवार को प्रभावी ढंग से कैसे नियंत्रित कर सकता हूँ?",
+        "answer": "एक एकीकृत दृष्टिकोण सबसे अच्छा है। इसमें हाथ से निराई करना, खुरपी या व्हील हो जैसे उपकरणों का उपयोग करना, फसल की पंक्तियों के बीच पुआल जैसी मल्चिंग करना और फसल चक्र अपनाना शामिल है। खरपतवारनाशकों का उपयोग किया जा सकता है, लेकिन यह महत्वपूर्ण है कि आप अपनी फसल के लिए सही समय पर और सही मात्रा में इसका उपयोग करें ताकि मुख्य फसल को नुकसान न पहुंचे।"
+      },
+      {
+        "id": 16,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "क्या फसल में फूल आने या कटाई के लिए तैयार होने पर कीटनाशकों का छिड़काव करना सुरक्षित है?",
+        "answer": "आपको बहुत सावधान रहना चाहिए। फूल आने के समय छिड़काव करने से मधुमक्खियों जैसे लाभकारी कीड़ों को नुकसान हो सकता है, जो परागण के लिए आवश्यक हैं। यदि छिड़काव बिल्कुल आवश्यक है, तो इसे देर दोपहर या शाम को करना सबसे अच्छा होता है जब मधुमक्खियों की गतिविधि कम होती है। हमेशा विशिष्ट निर्देशों के लिए रसायन के लेबल को पढ़ें।"
+      },
+      {
+        "id": 17,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "खरीफ, रबी और जायद की फसलों में क्या अंतर है?",
+        "answer": "ये मानसून पर आधारित फसल के मौसम हैं:\nखरीफ: मानसून की फसलें, जून-जुलाई में बोई जाती हैं और सितंबर-अक्टूबर में काटी जाती हैं (जैसे, चावल, मक्का, कपास)।\nरबी: सर्दियों की फसलें, अक्टूबर-दिसंबर में बोई जाती हैं और मार्च-अप्रैल में काटी जाती हैं (जैसे, गेहूं, चना, सरसों)।\nजायद: गर्मियों की फसलें, रबी और खरीफ के मौसम के बीच मार्च-जून से बोई जाती हैं (जैसे, तरबूज, खीरा, मूंग)।"
+      },
+      {
+        "id": 18,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मैं अपनी फसल काटने का सही समय कैसे बता सकता हूँ?",
+        "answer": "कटाई का समय उपज और गुणवत्ता के लिए महत्वपूर्ण है। यह फसल पर निर्भर करता है। गेहूं और चावल जैसे अनाज के लिए, सुनहरा-पीला रंग और कठोर, सूखे दाने देखें। फलों और सब्जियों के लिए, आदर्श आकार, रंग और दृढ़ता देखें। बहुत जल्दी या बहुत देर से कटाई करने से महत्वपूर्ण नुकसान हो सकता है।"
+      },
+      {
+        "id": 19,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मैं अपने कटे हुए अनाज को भंडारण के दौरान कीटों और खराब होने से कैसे बचा सकता हूँ?",
+        "answer": "सबसे पहले, सुनिश्चित करें कि अनाज ठीक से सूख गया हो (नमी 12% से कम हो)। उन्हें साफ, सूखे और वायुरोधी बोरियों या डिब्बे (जैसे पूसा बिन) में स्टोर करें। भंडारण बोरियों में सूखे नीम के पत्तों का उपयोग करने से कई भंडारण कीटों को प्राकृतिक रूप से दूर रखा जा सकता है।"
+      },
+      {
+        "id": 20,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "जैविक खेती (Organic Farming) क्या है? क्या मैं इससे अच्छा मुनाफा कमा सकता हूँ?",
+        "answer": "जैविक खेती एक ऐसी विधि है जिसमें रासायनिक उर्वरकों, कीटनाशकों और जीएमओ के उपयोग से बचा जाता है। यह खाद, गोबर की खाद और जैव-कीटनाशकों जैसे प्राकृतिक आदानों पर निर्भर करती है। हालांकि शुरुआत में पैदावार थोड़ी कम हो सकती है, लेकिन खेती की लागत अक्सर कम होती है, और जैविक उपज को बाजार में प्रीमियम मूल्य मिल सकता है, जिससे अच्छी लाभप्रदता होती है।"
+      },
+      {
+        "id": 21,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मैं अपनी मिट्टी और पानी की जांच कहां करवा सकता हूं?",
+        "answer": "आप अपने जिले के कृषि विज्ञान केंद्र (KVK), जिला कृषि विभाग की प्रयोगशाला, या राज्य कृषि विश्वविद्यालयों में अपनी मिट्टी और पानी का परीक्षण करवा सकते हैं। वे विस्तृत जानकारी के साथ एक मृदा स्वास्थ्य कार्ड प्रदान करते हैं।"
+      },
+      {
+        "id": 22,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "एमएसपी के अलावा, क्या फसल बीमा के लिए कोई सरकारी योजनाएं हैं?",
+        "answer": "हां, प्रधानमंत्री फसल बीमा योजना (PMFBY) फसल बीमा के लिए मुख्य सरकारी योजना है। यह अप्रत्याशित घटनाओं से होने वाले फसल के नुकसान या क्षति से पीड़ित किसानों को वित्तीय सहायता प्रदान करती है। आप अपने नजदीकी बैंक या कॉमन सर्विस सेंटर (CSC) के माध्यम से नामांकन कर सकते हैं।"
+      },
+      {
+        "id": 23,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "ड्रिप सिंचाई (टपक सिंचाई) कैसे काम करती है और क्या यह मेरे खेत के लिए उपयोगी है?",
+        "answer": "ड्रिप सिंचाई पाइप और एमिटर के एक नेटवर्क के माध्यम से पौधे की जड़ों तक सीधे और धीरे-धीरे पानी पहुंचाकर पानी की एक महत्वपूर्ण मात्रा बचाती है। यह अत्यधिक कुशल है, खरपतवार की वृद्धि को कम करती है, और विशेष रूप से पानी की कमी वाले क्षेत्रों में पंक्ति फसलों, बागों और सब्जी की खेती के लिए बहुत उपयोगी है।"
+      },
+      {
+        "id": 24,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मेरे खेत के जानवर खाद का एक अच्छा स्रोत हैं। मैं इससे अच्छी गुणवत्ता वाली खाद कैसे बना सकता हूँ?",
+        "answer": "अच्छी खाद बनाने के लिए, पशुओं के गोबर को अन्य जैविक पदार्थों जैसे फसल अवशेष, सूखी पत्तियों और रसोई के कचरे के साथ एक गड्ढे या ढेर में परत दर परत डालें। ढेर को नम रखें (गीला नहीं) और उचित वायु संचार के लिए इसे हर 15-20 दिनों में पलटें। यह 3-4 महीनों में तैयार हो जाएगी जब यह गहरे रंग की, भुरभुरी और मिट्टी जैसी गंध वाली हो जाएगी।"
+      },
+      {
+        "id": 25,
+        "category": "कृषि संबंधी प्रश्न",
+        "question": "मौसम का पूर्वानुमान बताता है कि ओलावृष्टि या भारी बारिश होने वाली है। क्या मैं अपनी खड़ी फसलों की सुरक्षा के लिए कुछ कर सकता हूँ?",
+        "answer": "उच्च मूल्य वाली फसलों के लिए, ओला-रोधी जाल (Anti-hail nets) एक सुरक्षात्मक उपाय हो सकते हैं यदि पहले से स्थापित हों। भारी बारिश के लिए, यह सुनिश्चित करना कि आपके खेत में उचित जल निकासी व्यवस्था है, जलभराव को रोकने के लिए महत्वपूर्ण है, जो जड़ों को नुकसान पहुंचा सकता है। यदि फसल पकने के करीब है, तो उपज का एक हिस्सा बचाने के लिए आपातकालीन, जल्दी कटाई पर विचार किया जा सकता है।"
+      }
+    ]
+  }

@@ -1,182 +1,60 @@
-// import 'package:flutter/material.dart';
-//
-// // A model to hold data for each crop
-// class Crop {
-//   final String name;
-//   final String msp;
-//   final String imageUrl;
-//
-//   const Crop({required this.name, required this.msp, required this.imageUrl});
-// }
-//
-// // Sample data for crops.
-// const List<Crop> allCrops = [
-//   Crop(name: 'Wheat', msp: '₹2125', imageUrl: 'https://i.imgur.com/example_wheat.png'),
-//   Crop(name: 'Paddy', msp: '₹2040', imageUrl: 'https://i.imgur.com/example_paddy.png'),
-//   Crop(name: 'Maize', msp: '₹1962', imageUrl: 'https://i.imgur.com/example_maize.png'),
-//   Crop(name: 'Mustard', msp: '₹5450', imageUrl: 'https://i.imgur.com/example_mustard.png'),
-//   Crop(name: 'Sugarcane', msp: '₹3050', imageUrl: 'https://i.imgur.com/example_sugarcane.png'),
-//   Crop(name: 'Cotton', msp: '₹6080', imageUrl: 'https://i.imgur.com/example_cotton.png'),
-// ];
-//
-//
-// class MspScreen extends StatefulWidget {
-//   const MspScreen({super.key});
-//
-//   @override
-//   State<MspScreen> createState() => _MspScreenState();
-// }
-//
-// class _MspScreenState extends State<MspScreen> {
-//   // This list will hold the crops displayed in the grid
-//   List<Crop> _displayedCrops = allCrops;
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('MSP'),
-//         elevation: 2,
-//       ),
-//       body: Padding(
-//         padding: const EdgeInsets.all(16.0),
-//         child: Column(
-//           children: [
-//             // Combined Search and Dropdown using Autocomplete
-//             Autocomplete<Crop>(
-//               optionsBuilder: (TextEditingValue textEditingValue) {
-//                 // If the field is empty, show all crops as suggestions.
-//                 if (textEditingValue.text.isEmpty) {
-//                   return allCrops.toList();
-//                 }
-//                 // Otherwise, filter the list based on what the user has typed.
-//                 return allCrops.where((Crop crop) {
-//                   return crop.name.toLowerCase().contains(textEditingValue.text.toLowerCase());
-//                 });
-//               },
-//               displayStringForOption: (Crop crop) => crop.name,
-//               fieldViewBuilder: (BuildContext context, TextEditingController fieldController, FocusNode fieldFocusNode, VoidCallback onFieldSubmitted) {
-//                 return TextField(
-//                   controller: fieldController,
-//                   focusNode: fieldFocusNode,
-//                   decoration: InputDecoration(
-//                     hintText: 'Search or Select Crop...',
-//                     prefixIcon: const Icon(Icons.search),
-//                     // Add a clear button to reset the search and grid
-//                     suffixIcon: IconButton(
-//                       icon: const Icon(Icons.clear),
-//                       onPressed: () {
-//                         fieldController.clear();
-//                         setState(() {
-//                           _displayedCrops = allCrops;
-//                         });
-//                         // Hide the keyboard
-//                         FocusScope.of(context).unfocus();
-//                       },
-//                     ),
-//                     border: OutlineInputBorder(
-//                       borderRadius: BorderRadius.circular(12),
-//                       borderSide: BorderSide.none,
-//                     ),
-//                     filled: true,
-//                     fillColor: Colors.grey[200],
-//                   ),
-//                 );
-//               },
-//               onSelected: (Crop selection) {
-//                 // When a user selects a crop, update the grid to show only that crop.
-//                 setState(() {
-//                   _displayedCrops = [selection];
-//                 });
-//                  // Hide the keyboard
-//                 FocusScope.of(context).unfocus();
-//               },
-//             ),
-//             const SizedBox(height: 20),
-//
-//             // Grid of Crops
-//             Expanded(
-//               child: GridView.builder(
-//                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-//                   crossAxisCount: 2,
-//                   crossAxisSpacing: 16,
-//                   mainAxisSpacing: 16,
-//                   childAspectRatio: 0.8,
-//                 ),
-//                 itemCount: _displayedCrops.length,
-//                 itemBuilder: (context, index) {
-//                   final crop = _displayedCrops[index];
-//                   return Card(
-//                     elevation: 2,
-//                     shape: RoundedRectangleBorder(
-//                       borderRadius: BorderRadius.circular(12),
-//                     ),
-//                     clipBehavior: Clip.antiAlias,
-//                     child: Column(
-//                       crossAxisAlignment: CrossAxisAlignment.stretch,
-//                       children: [
-//                         Expanded(
-//                           child: Container(
-//                             color: Colors.grey.shade300,
-//                             child: const Icon(Icons.image, size: 50, color: Colors.grey),
-//                           ),
-//                         ),
-//                         Padding(
-//                           padding: const EdgeInsets.all(8.0),
-//                           child: Column(
-//                             crossAxisAlignment: CrossAxisAlignment.start,
-//                             children: [
-//                               Text(crop.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-//                               Text(crop.msp, style: const TextStyle(color: Colors.black54)),
-//                             ],
-//                           ),
-//                         ),
-//                       ],
-//                     ),
-//                   );
-//                 },
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
-// A model to hold data for each crop
 class Crop {
   final String name;
-  final String msp;
-  final String imageUrl;
+  final String variety;
+  final String msp2025_26;
+  final String costOfProduction;
+  final String marginOverCost;
+  final String increaseFrom2024_25;
+  final String mspIn2013_14;
+  final String increaseFrom2013_14;
 
-  const Crop({required this.name, required this.msp, required this.imageUrl});
+  const Crop({
+    required this.name,
+    required this.variety,
+    required this.msp2025_26,
+    required this.costOfProduction,
+    required this.marginOverCost,
+    required this.increaseFrom2024_25,
+    required this.mspIn2013_14,
+    required this.increaseFrom2013_14,
+  });
+
+  factory Crop.fromJson(Map<String, dynamic> json, bool isEnglish) {
+    // Helper to format values consistently
+    String getValue(String key, {String prefix = '', String suffix = ''}) {
+      return '$prefix${json[key]?.toString() ?? 'N/A'}$suffix';
+    }
+
+    return Crop(
+      name: getValue(isEnglish ? 'crop' : 'fasal'),
+      variety: getValue(isEnglish ? 'variety' : 'kism'),
+      msp2025_26: getValue(isEnglish ? 'msp_2025_26' : 'msp_2025_26', prefix: '₹'),
+      costOfProduction: getValue(isEnglish ? 'cost_of_production' : 'utpadan_lagat', prefix: '₹'),
+      marginOverCost: getValue(isEnglish ? 'margin_over_cost_percent' : 'lagat_par_margin_pratishat', suffix: '%'),
+      increaseFrom2024_25: getValue(isEnglish ? 'increase_from_2024_25' : '2024_25_se_vriddhi', prefix: '₹'),
+      mspIn2013_14: getValue(isEnglish ? 'msp_in_2013_14' : 'msp_2013_14_mein', prefix: '₹'),
+      increaseFrom2013_14: getValue(isEnglish ? 'increase_from_2013_14_percent' : '2013_14_se_vriddhi_pratishat', suffix: '%'),
+    );
+  }
 }
 
-// Sample data for crops.
-const List<Crop> allCrops = [
-  Crop(name: 'Wheat', msp: '₹2125', imageUrl: 'https://i.imgur.com/example_wheat.png'),
-  Crop(name: 'Paddy', msp: '₹2040', imageUrl: 'https://i.imgur.com/example_paddy.png'),
-  Crop(name: 'Maize', msp: '₹1962', imageUrl: 'https://i.imgur.com/example_maize.png'),
-  Crop(name: 'Mustard', msp: '₹5450', imageUrl: 'https://i.imgur.com/example_mustard.png'),
-  Crop(name: 'Sugarcane', msp: '₹3050', imageUrl: 'https://i.imgur.com/example_sugarcane.png'),
-  Crop(name: 'Cotton', msp: '₹6080', imageUrl: 'https://i.imgur.com/example_cotton.png'),
-];
-
-
 class MspScreen extends StatefulWidget {
-  const MspScreen({super.key});
+  final String selectedLanguage;
+  const MspScreen({super.key, required this.selectedLanguage});
 
   @override
   State<MspScreen> createState() => _MspScreenState();
 }
 
 class _MspScreenState extends State<MspScreen> {
-  List<Crop> _displayedCrops = allCrops;
-  final TextEditingController _autocompleteController = TextEditingController();
-
+  List<Crop> _allCrops = [];
+  List<Crop> _displayedCrops = [];
+  final TextEditingController _searchController = TextEditingController();
   final SpeechToText _speechToText = SpeechToText();
   bool _speechEnabled = false;
   bool _isListening = false;
@@ -184,186 +62,151 @@ class _MspScreenState extends State<MspScreen> {
   @override
   void initState() {
     super.initState();
+    _loadMspData();
     _initSpeech();
   }
 
-  /// Initialize the speech-to-text service
+  Future<void> _loadMspData() async {
+    final String response = await rootBundle.loadString('assets/msp.json');
+    final data = await json.decode(response);
+    bool isEnglish = widget.selectedLanguage == 'English';
+    final key = isEnglish ? 'kharif_msp_2025_26_english' : 'kharif_msp_2025_26_hindi';
+
+    if (mounted) {
+      setState(() {
+        _allCrops = (data[key] as List).map((cropJson) => Crop.fromJson(cropJson, isEnglish)).toList();
+        _displayedCrops = _allCrops;
+      });
+    }
+  }
+
   void _initSpeech() async {
-    _speechEnabled = await _speechToText.initialize(
-      // The status listener is now in the initialize method
-      onStatus: (status) {
-        // The status is a string, e.g., "listening", "notListening"
-        if (status == 'notListening' && _isListening) {
-          setState(() => _isListening = false);
-          _autoSubmitSpeechResult();
-        }
-      },
-      onError: (errorNotification) {
-        // Handle errors here
-        setState(() => _isListening = false);
-      },
-    );
-    setState(() {});
+    _speechEnabled = await _speechToText.initialize();
+    if (mounted) setState(() {});
   }
 
-  /// Start a new speech recognition session
   void _startListening() async {
+    await _speechToText.listen(onResult: (result) {
+      _searchController.text = result.recognizedWords;
+      _filterCrops(result.recognizedWords);
+    });
     setState(() => _isListening = true);
-    await _speechToText.listen(
-      onResult: (result) {
-        _autocompleteController.text = result.recognizedWords;
-      },
-    );
   }
 
-  /// Manually stop the active session
   void _stopListening() async {
     await _speechToText.stop();
     setState(() => _isListening = false);
   }
 
-  /// Auto-submit logic
-  void _autoSubmitSpeechResult() {
-    final spokenText = _autocompleteController.text.trim().toLowerCase();
-    if (spokenText.isEmpty) return;
-
-    Crop? bestMatch;
-    try {
-      bestMatch = allCrops.firstWhere(
-        (crop) => crop.name.toLowerCase().contains(spokenText),
-      );
-    } catch (e) {
-      bestMatch = null;
+  void _filterCrops(String query) {
+    if (query.isEmpty) {
+      setState(() => _displayedCrops = _allCrops);
+      return;
     }
-
-    if (bestMatch != null) {
-      setState(() {
-        _displayedCrops = [bestMatch!];
-        _autocompleteController.text = bestMatch.name;
-      });
-      FocusScope.of(context).unfocus();
-    }
+    setState(() {
+      _displayedCrops = _allCrops.where((crop) => crop.name.toLowerCase().contains(query.toLowerCase())).toList();
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MSP'),
+        title: Text(widget.selectedLanguage == 'English' ? 'MSP Rates' : 'एमएसपी रेट'),
         elevation: 2,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Autocomplete<Crop>(
-              optionsBuilder: (TextEditingValue textEditingValue) {
-                final query = textEditingValue.text.toLowerCase();
-                if (query.isEmpty) {
-                  WidgetsBinding.instance.addPostFrameCallback((_) {
-                    if (mounted) setState(() => _displayedCrops = allCrops);
-                  });
-                }
-
-                if (textEditingValue.text.isEmpty) {
-                  return allCrops.toList();
-                }
-                return allCrops.where((Crop crop) {
-                  return crop.name.toLowerCase().contains(query);
-                });
-              },
-              displayStringForOption: (Crop crop) => crop.name,
-              fieldViewBuilder: (BuildContext context, TextEditingController fieldController, FocusNode fieldFocusNode, VoidCallback onFieldSubmitted) {
-                _autocompleteController.addListener(() {
-                  if (fieldController.text != _autocompleteController.text) {
-                    fieldController.text = _autocompleteController.text;
-                  }
-                });
-
-                return TextField(
-                  controller: fieldController,
-                  focusNode: fieldFocusNode,
-                  decoration: InputDecoration(
-                    hintText: 'Search or Select Crop...',
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        if (fieldController.text.isNotEmpty)
-                          IconButton(
-                            icon: const Icon(Icons.clear),
-                            onPressed: () {
-                              fieldController.clear();
-                              _autocompleteController.clear();
-                              FocusScope.of(context).unfocus();
-                            },
-                          ),
-                        IconButton(
-                          icon: Icon(_isListening ? Icons.mic_off : Icons.mic),
-                          onPressed: _speechEnabled ? (_isListening ? _stopListening : _startListening) : null,
-                          tooltip: 'Listen for crop name',
-                        ),
-                      ],
-                    ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide.none,
-                    ),
-                    filled: true,
-                    fillColor: Colors.grey[200],
+            // --- UPDATED TEXTFIELD ---
+            TextField(
+              controller: _searchController,
+              onChanged: _filterCrops,
+              decoration: InputDecoration(
+                hintText: widget.selectedLanguage == 'English' ? 'Search Crop...' : 'फसल खोजें...',
+                prefixIcon: Icon(Icons.search, color: Colors.green[800]),
+                suffixIcon: IconButton(
+                  icon: Icon(
+                    _isListening ? Icons.mic_off : Icons.mic,
+                    color: Colors.green[800],
                   ),
-                );
-              },
-              onSelected: (Crop selection) {
-                setState(() => _displayedCrops = [selection]);
-                FocusScope.of(context).unfocus();
-              },
+                  onPressed: _speechEnabled ? (_isListening ? _stopListening : _startListening) : null,
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide.none,
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: Colors.green.shade600, width: 2),
+                ),
+                filled: true,
+                fillColor: Colors.green.shade50,
+              ),
             ),
             const SizedBox(height: 20),
             Expanded(
-              child: GridView.builder(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 16,
-                  mainAxisSpacing: 16,
-                  childAspectRatio: 0.8,
-                ),
-                itemCount: _displayedCrops.length,
-                itemBuilder: (context, index) {
-                  final crop = _displayedCrops[index];
-                  return Card(
-                    elevation: 2,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    clipBehavior: Clip.antiAlias,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Expanded(
-                          child: Container(
-                            color: Colors.grey.shade300,
-                            child: const Icon(Icons.image, size: 50, color: Colors.grey),
-                          ),
+              child: _allCrops.isEmpty
+                  ? const Center(child: CircularProgressIndicator())
+                  : _displayedCrops.isEmpty
+                      ? Center(child: Text(widget.selectedLanguage == 'English' ? 'No crops found' : 'कोई फसल नहीं मिली'))
+                      : ListView.builder(
+                          itemCount: _displayedCrops.length,
+                          itemBuilder: (context, index) {
+                            final crop = _displayedCrops[index];
+                            // --- UPDATED CARD ---
+                            return Card(
+                              elevation: 2,
+                              margin: const EdgeInsets.only(bottom: 16),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                              color: Colors.green.shade50,
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '${crop.name} (${crop.variety})',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.green.shade900,
+                                      ),
+                                    ),
+                                    Divider(
+                                      height: 24,
+                                      color: Colors.green.shade200,
+                                    ),
+                                    _buildInfoRow(widget.selectedLanguage == 'English' ? 'MSP (2025-26)' : 'एमएसपी (2025-26)', crop.msp2025_26),
+                                    _buildInfoRow(widget.selectedLanguage == 'English' ? 'Cost of Production' : 'उत्पादन लागत', crop.costOfProduction),
+                                    _buildInfoRow(widget.selectedLanguage == 'English' ? 'Margin Over Cost' : 'लागत पर मार्जिन', crop.marginOverCost),
+                                    const SizedBox(height: 10),
+                                    _buildInfoRow(widget.selectedLanguage == 'English' ? 'Increase from 2024-25' : '2024-25 से वृद्धि', crop.increaseFrom2024_25),
+                                    _buildInfoRow(widget.selectedLanguage == 'English' ? 'MSP in 2013-14' : '2013-14 में एमएसपी', crop.mspIn2013_14),
+                                    _buildInfoRow(widget.selectedLanguage == 'English' ? '% Increase from 2013-14' : '2013-14 से % वृद्धि', crop.increaseFrom2013_14),
+                                  ],
+                                ),
+                              ),
+                            );
+                          },
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(crop.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-                              Text(crop.msp, style: const TextStyle(color: Colors.black54)),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
-                },
-              ),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildInfoRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(label, style: TextStyle(color: Colors.grey[700])), // Slightly darker grey for better contrast
+          Text(value, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+        ],
       ),
     );
   }
