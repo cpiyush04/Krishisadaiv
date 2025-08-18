@@ -143,7 +143,8 @@ Follow these steps to set up the app locally:
 ### 🔹 Clone the Repository  
 ```bash
 git clone https://github.com/cpiyush04/krishisadaiv.git
-cd krishisadaiv
+cd krishisadaiv/flutterproject
+
 ```
 
 ### 🔹 Install Dependencies 
