@@ -11,21 +11,21 @@ The application is **bilingual** (English and Hindi) for accessibility and usabi
 ### 1. Crop Disease Detection
 - Upload an image of a crop using **camera or gallery**.  
 - A **PyTorch Mobile (Lite) Vision Transformer model** classifies the crop image and detects possible diseases.  
-- Provides a **description of the disease**, **symptoms**, and **preventive measures**.  
+- Provides **disease category**, **description about the disease and related symptoms**, and **preventive measures**.  
 
 ### 2. Fertilizer Information
 - Detailed database of **chemical and bio-fertilizers**.  
-- Includes **active components**, **primary functions**, **suitable crops**, and **application timing**.  
-- Farmers can easily search for fertilizers by name or crop type.  
+- Includes **active components**, **primary functions**, **suitable crops**, and **application timing**.   
 
 ### 3. MSP (Minimum Support Price) Information
-- Provides up-to-date **MSP data** for multiple crops.  
+- Provides up-to-date **MSP data** for multiple crops saved.  
 - Search by crop name and view detailed MSP values.  
 - Integrated **voice search** using `speech_to_text`.  
 
 ### 4. Weather Forecast
 - Real-time **current weather** using device GPS location.  
-- **7-day weather forecast** with temperature, rainfall, and humidity insights.  
+- **7-day weather forecast** with temperature, rainfall, and humidity insights.
+- In-case of **no internet connectivity**, the last fetched data saved using `shared_preferences` is displayed.
 - Personalized agricultural recommendations such as **irrigation planning** and **crop health suggestions**.  
 
 ### 5. General FAQs
@@ -37,13 +37,54 @@ The application is **bilingual** (English and Hindi) for accessibility and usabi
 
 ---
 
+## 🧠 Machine Learning Model Utilized for Crop Disease Detection
+
+This app integrates a **Fine-tuned Vision Transformer (ViT)** model for crop disease detection. This pre-trained image classification model runs directly on the user's device. This allows for fast, offline-capable analysis of crop images.  
+
+### Model Format and Engine
+- **Format**: The model is saved in the PyTorch Lite (.ptl) format. This is a lightweight version of a standard PyTorch model, optimized for deployment on mobile and edge devices.
+- **Inference Engine**: The app uses the `pytorch_lite` Flutter package. This package acts as a bridge, allowing the Flutter application (written in Dart) to execute the underlying PyTorch Lite model (which is typically written in C++).
+
+### Disease Classification Labels
+
+```plaintext
+| Crop             |    Disease / Condition    |
+|------------------|---------------------------|
+| **Corn (Maize)** |    Common Rust            |
+|                  |    Gray Leaf Spot         |
+|                  |    Healthy                |
+| **Potato**       |    Early Blight           |
+|                  |    Late Blight            |
+|                  |    Healthy                |
+| **Rice**         |    Brown Spot             |
+|                  |    Leaf Blast             |
+|                  |    Healthy                |
+| **Wheat**        |    Brown Rust             |
+|                  |    Yellow Rust            |
+|                  |    Healthy                |
+| **Other crop**   |    Healthy                |
+| (Invalid Image)  |                           |
+```
+
+### Integration and Workflow in App
+- 1. **Model Loading**: When the app starts, the `_loadModel()` function is called. It uses `PytorchLite.loadClassificationModel()` to load the `model.ptl` file and its corresponding `labels.txt` from the app's assets into memory.
+- 2. **Image Selection**: User selects an image using the `image_picker package`, either from their camera or gallery.
+- 3. **Classification**: The `_analyzeImage()` function is triggered. The selected image is read as a byte array. The  `_model!.getImagePrediction() ` method is called. This method handles all the necessary preprocessing (resizing to 224x224 and normalization) and runs the on-device inference. The model returns the name of the class with the highest probability score (e.g., "Potato___Early_Blight").
+
+### Displaying Results
+- **Output**: The model outputs a single prediction corresponding to one of the 13 classes it was trained on.
+- The predicted class name is then used as a key to look up detailed information in the `assets/diseases.json` file.
+- This JSON file contains user-friendly descriptions and actionable preventive measures for each disease, available in both English and Hindi.
+
+---
+
 ## 🏗️ Project Structure
 
 ```plaintext
 krishi-sadaiv/
 │── flutterproject
 │   │── lib/
-│   │   │   ├── main.dart                # App entry point
+│   │   ├── main.dart                # App entry point
 │   │   ├── fertilizer_screen.dart   # Fertilizer information UI
 │   │   ├── general_faqs_screen.dart # FAQ section
 │   │   ├── msp_screen.dart          # MSP data section
@@ -52,16 +93,16 @@ krishi-sadaiv/
 │   │   └── widgets/                 # Reusable UI widgets
 │   │
 │   │── assets/
-│   │   ├── images/                  # App logos, icons, and illustrations
-│   │   ├── models/                  # ML model (.ptl) for crop disease detection
-│   │   └── data/                    # JSON files
-│   │       ├── diseases.json
-│   │       ├── fertilizers.json
-│   │       ├── faqs.json
-│   │       └── msp.json
+│   │   ├── models/                  # ML model for crop disease detection
+│   │   │   ├── model.ptl
+│   │   │   ├── labels.txt
+│   │   ├── diseases.json
+│   │   ├── fertilizers.json
+│   │   ├── faqs.json
+│   │   └── msp.json
 │   │
 │   │── pubspec.yaml                 # Dependencies & assets configuration
-│── README.md                    # Project documentation
+│── README.md                        # Project documentation
 ```
 
 ---
@@ -114,6 +155,14 @@ flutter pub get
 ```bash
 flutter run
 ```
+
+---
+
+## 📚 References  
+
+- Kinyua, W. (2024). *Smart Farming Disease Detection Transformer*. Hugging Face.  
+  [https://huggingface.co/wambugu1738/crop_leaf_diseases_vit](https://huggingface.co/wambugu1738/crop_leaf_diseases_vit)  
+
 
 
 
