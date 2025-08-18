@@ -1,8 +1,10 @@
-# 🌾 Krishi-Sadaiv
+# 🌾 Krishi-Sadev
 
-**Krishi-Sadaiv** is a Flutter-based mobile application designed as a **comprehensive agricultural assistant for farmers**.  
+**Krishi-Sadev** is a Flutter-based mobile application designed as a **comprehensive agricultural assistant for farmers**.  
 It integrates **machine learning**, **real-time weather forecasting**, and **agricultural databases** to provide farmers with actionable insights.  
 The application is **bilingual** (English and Hindi) for accessibility and usability in rural communities.  
+
+APK file for installing **Krishi-Sadev** app on your device can be found [here](https://drive.google.com/drive/folders/1oQXBa8Wj0SSsQKN0jeZ2vbOJ8Ygmt7rZ?usp=drive_link).
 
 ---
 
