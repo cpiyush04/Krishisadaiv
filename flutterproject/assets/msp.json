@@ -1,381 +1,465 @@
 {
-    "kharif_msp_2025_26_english": [
-      {
-        "s_no": 1,
-        "crop": "Paddy",
-        "variety": "Common",
-        "msp_2025_26": 2369,
-        "cost_of_production": 1579,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 69,
-        "msp_in_2013_14": 1310,
-        "increase_from_2013_14_percent": 81
-      },
-      {
-        "s_no": 2,
-        "crop": "Paddy",
-        "variety": "Grade A",
-        "msp_2025_26": 2389,
-        "cost_of_production": "Not Separately Compiled",
-        "margin_over_cost_percent": null,
-        "increase_from_2024_25": 69,
-        "msp_in_2013_14": 1345,
-        "increase_from_2013_14_percent": 78
-      },
-      {
-        "s_no": 3,
-        "crop": "Jowar",
-        "variety": "Hybrid",
-        "msp_2025_26": 3699,
-        "cost_of_production": 2466,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 328,
-        "msp_in_2013_14": 1500,
-        "increase_from_2013_14_percent": 147
-      },
-      {
-        "s_no": 4,
-        "crop": "Jowar",
-        "variety": "Maldandi",
-        "msp_2025_26": 3749,
-        "cost_of_production": "Not Separately Compiled",
-        "margin_over_cost_percent": null,
-        "increase_from_2024_25": 328,
-        "msp_in_2013_14": 1520,
-        "increase_from_2013_14_percent": 147
-      },
-      {
-        "s_no": 5,
-        "crop": "Bajra",
-        "variety": null,
-        "msp_2025_26": 2775,
-        "cost_of_production": 1703,
-        "margin_over_cost_percent": 63,
-        "increase_from_2024_25": 150,
-        "msp_in_2013_14": 1250,
-        "increase_from_2013_14_percent": 122
-      },
-      {
-        "s_no": 6,
-        "crop": "Ragi",
-        "variety": null,
-        "msp_2025_26": 4886,
-        "cost_of_production": 3257,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 596,
-        "msp_in_2013_14": 1500,
-        "increase_from_2013_14_percent": 226
-      },
-      {
-        "s_no": 7,
-        "crop": "Maize",
-        "variety": null,
-        "msp_2025_26": 2400,
-        "cost_of_production": 1508,
-        "margin_over_cost_percent": 59,
-        "increase_from_2024_25": 175,
-        "msp_in_2013_14": 1310,
-        "increase_from_2013_14_percent": 83
-      },
-      {
-        "s_no": 8,
-        "crop": "Tur/Arhar",
-        "variety": null,
-        "msp_2025_26": 8000,
-        "cost_of_production": 5038,
-        "margin_over_cost_percent": 59,
-        "increase_from_2024_25": 450,
-        "msp_in_2013_14": 4300,
-        "increase_from_2013_14_percent": 86
-      },
-      {
-        "s_no": 9,
-        "crop": "Moong",
-        "variety": null,
-        "msp_2025_26": 8768,
-        "cost_of_production": 5845,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 86,
-        "msp_in_2013_14": 4500,
-        "increase_from_2013_14_percent": 95
-      },
-      {
-        "s_no": 10,
-        "crop": "Urad",
-        "variety": null,
-        "msp_2025_26": 7800,
-        "cost_of_production": 5114,
-        "margin_over_cost_percent": 53,
-        "increase_from_2024_25": 400,
-        "msp_in_2013_14": 4300,
-        "increase_from_2013_14_percent": 81
-      },
-      {
-        "s_no": 11,
-        "crop": "Groundnut",
-        "variety": null,
-        "msp_2025_26": 7263,
-        "cost_of_production": 4842,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 480,
-        "msp_in_2013_14": 4000,
-        "increase_from_2013_14_percent": 82
-      },
-      {
-        "s_no": 12,
-        "crop": "Sunflower Seed",
-        "variety": null,
-        "msp_2025_26": 7721,
-        "cost_of_production": 5147,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 441,
-        "msp_in_2013_14": 3700,
-        "increase_from_2013_14_percent": 109
-      },
-      {
-        "s_no": 13,
-        "crop": "Soybean",
-        "variety": "Yellow",
-        "msp_2025_26": 5328,
-        "cost_of_production": 3552,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 436,
-        "msp_in_2013_14": 2560,
-        "increase_from_2013_14_percent": 108
-      },
-      {
-        "s_no": 14,
-        "crop": "Sesamum",
-        "variety": null,
-        "msp_2025_26": 9846,
-        "cost_of_production": 6564,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 579,
-        "msp_in_2013_14": 4500,
-        "increase_from_2013_14_percent": 119
-      },
-      {
-        "s_no": 15,
-        "crop": "Nigerseed",
-        "variety": null,
-        "msp_2025_26": 9537,
-        "cost_of_production": 6358,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 820,
-        "msp_in_2013_14": 3500,
-        "increase_from_2013_14_percent": 172
-      },
-      {
-        "s_no": 16,
-        "crop": "Cotton",
-        "variety": "Medium Staple",
-        "msp_2025_26": 7710,
-        "cost_of_production": 5140,
-        "margin_over_cost_percent": 50,
-        "increase_from_2024_25": 589,
-        "msp_in_2013_14": 3700,
-        "increase_from_2013_14_percent": 108
-      },
-      {
-        "s_no": 17,
-        "crop": "Cotton",
-        "variety": "Long Staple",
-        "msp_2025_26": 8110,
-        "cost_of_production": "Not Separately Compiled",
-        "margin_over_cost_percent": null,
-        "increase_from_2024_25": 589,
-        "msp_in_2013_14": 4000,
-        "increase_from_2013_14_percent": 103
-      }
-    ],
-    
-    "kharif_msp_2025_26_hindi": [
-      {
-        "kramank_sankhya": 1,
-        "fasal": "धान",
-        "kism": "सामान्य",
-        "msp_2025_26": 2369,
-        "utpadan_lagat": 1579,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 69,
-        "msp_2013_14_mein": 1310,
-        "2013_14_se_vriddhi_pratishat": 81
-      },
-      {
-        "kramank_sankhya": 2,
-        "fasal": "धान",
-        "kism": "ग्रेड ए",
-        "msp_2025_26": 2389,
-        "utpadan_lagat": "अलग से संकलित नहीं",
-        "lagat_par_margin_pratishat": null,
-        "2024_25_se_vriddhi": 69,
-        "msp_2013_14_mein": 1345,
-        "2013_14_se_vriddhi_pratishat": 78
-      },
-      {
-        "kramank_sankhya": 3,
-        "fasal": "ज्वार",
-        "kism": "हाइब्रिड",
-        "msp_2025_26": 3699,
-        "utpadan_lagat": 2466,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 328,
-        "msp_2013_14_mein": 1500,
-        "2013_14_se_vriddhi_pratishat": 147
-      },
-      {
-        "kramank_sankhya": 4,
-        "fasal": "ज्वार",
-        "kism": "मालदंडी",
-        "msp_2025_26": 3749,
-        "utpadan_lagat": "अलग से संकलित नहीं",
-        "lagat_par_margin_pratishat": null,
-        "2024_25_se_vriddhi": 328,
-        "msp_2013_14_mein": 1520,
-        "2013_14_se_vriddhi_pratishat": 147
-      },
-      {
-        "kramank_sankhya": 5,
-        "fasal": "बाजरा",
-        "kism": null,
-        "msp_2025_26": 2775,
-        "utpadan_lagat": 1703,
-        "lagat_par_margin_pratishat": 63,
-        "2024_25_se_vriddhi": 150,
-        "msp_2013_14_mein": 1250,
-        "2013_14_se_vriddhi_pratishat": 122
-      },
-      {
-        "kramank_sankhya": 6,
-        "fasal": "रागी",
-        "kism": null,
-        "msp_2025_26": 4886,
-        "utpadan_lagat": 3257,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 596,
-        "msp_2013_14_mein": 1500,
-        "2013_14_se_vriddhi_pratishat": 226
-      },
-      {
-        "kramank_sankhya": 7,
-        "fasal": "मक्का",
-        "kism": null,
-        "msp_2025_26": 2400,
-        "utpadan_lagat": 1508,
-        "lagat_par_margin_pratishat": 59,
-        "2024_25_se_vriddhi": 175,
-        "msp_2013_14_mein": 1310,
-        "2013_14_se_vriddhi_pratishat": 83
-      },
-      {
-        "kramank_sankhya": 8,
-        "fasal": "तूर/अरहर",
-        "kism": null,
-        "msp_2025_26": 8000,
-        "utpadan_lagat": 5038,
-        "lagat_par_margin_pratishat": 59,
-        "2024_25_se_vriddhi": 450,
-        "msp_2013_14_mein": 4300,
-        "2013_14_se_vriddhi_pratishat": 86
-      },
-      {
-        "kramank_sankhya": 9,
-        "fasal": "मूंग",
-        "kism": null,
-        "msp_2025_26": 8768,
-        "utpadan_lagat": 5845,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 86,
-        "msp_2013_14_mein": 4500,
-        "2013_14_se_vriddhi_pratishat": 95
-      },
-      {
-        "kramank_sankhya": 10,
-        "fasal": "उड़द",
-        "kism": null,
-        "msp_2025_26": 7800,
-        "utpadan_lagat": 5114,
-        "lagat_par_margin_pratishat": 53,
-        "2024_25_se_vriddhi": 400,
-        "msp_2013_14_mein": 4300,
-        "2013_14_se_vriddhi_pratishat": 81
-      },
-      {
-        "kramank_sankhya": 11,
-        "fasal": "मूंगफली",
-        "kism": null,
-        "msp_2025_26": 7263,
-        "utpadan_lagat": 4842,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 480,
-        "msp_2013_14_mein": 4000,
-        "2013_14_se_vriddhi_pratishat": 82
-      },
-      {
-        "kramank_sankhya": 12,
-        "fasal": "सूरजमुखी बीज",
-        "kism": null,
-        "msp_2025_26": 7721,
-        "utpadan_lagat": 5147,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 441,
-        "msp_2013_14_mein": 3700,
-        "2013_14_se_vriddhi_pratishat": 109
-      },
-      {
-        "kramank_sankhya": 13,
-        "fasal": "सोयाबीन",
-        "kism": "पीला",
-        "msp_2025_26": 5328,
-        "utpadan_lagat": 3552,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 436,
-        "msp_2013_14_mein": 2560,
-        "2013_14_se_vriddhi_pratishat": 108
-      },
-      {
-        "kramank_sankhya": 14,
-        "fasal": "तिल",
-        "kism": null,
-        "msp_2025_26": 9846,
-        "utpadan_lagat": 6564,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 579,
-        "msp_2013_14_mein": 4500,
-        "2013_14_se_vriddhi_pratishat": 119
-      },
-      {
-        "kramank_sankhya": 15,
-        "fasal": "रामतिल",
-        "kism": null,
-        "msp_2025_26": 9537,
-        "utpadan_lagat": 6358,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 820,
-        "msp_2013_14_mein": 3500,
-        "2013_14_se_vriddhi_pratishat": 172
-      },
-      {
-        "kramank_sankhya": 16,
-        "fasal": "कपास",
-        "kism": "मध्यम रेशा",
-        "msp_2025_26": 7710,
-        "utpadan_lagat": 5140,
-        "lagat_par_margin_pratishat": 50,
-        "2024_25_se_vriddhi": 589,
-        "msp_2013_14_mein": 3700,
-        "2013_14_se_vriddhi_pratishat": 108
-      },
-      {
-        "kramank_sankhya": 17,
-        "fasal": "कपास",
-        "kism": "लंबा रेशा",
-        "msp_2025_26": 8110,
-        "utpadan_lagat": "अलग से संकलित नहीं",
-        "lagat_par_margin_pratishat": null,
-        "2024_25_se_vriddhi": 589,
-        "msp_2013_14_mein": 4000,
-        "2013_14_se_vriddhi_pratishat": 103
-      }
-    ]
-  }
+  "msp_en": [
+    {
+      "s_no": 1,
+      "crop": "Paddy",
+      "variety": "Common",
+      "msp_2025_26": 2369,
+      "cost_of_production": 1579,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 69,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 2,
+      "crop": "Paddy",
+      "variety": "Grade A",
+      "msp_2025_26": 2389,
+      "cost_of_production": "Not Separately Compiled",
+      "margin_over_cost_percent": null,
+      "increase_from_2024_25": 69,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 3,
+      "crop": "Jowar",
+      "variety": "Hybrid",
+      "msp_2025_26": 3699,
+      "cost_of_production": 2466,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 328,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 4,
+      "crop": "Jowar",
+      "variety": "Maldandi",
+      "msp_2025_26": 3749,
+      "cost_of_production": "Not Separately Compiled",
+      "margin_over_cost_percent": null,
+      "increase_from_2024_25": 328,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 5,
+      "crop": "Bajra",
+      "variety": null,
+      "msp_2025_26": 2775,
+      "cost_of_production": 1703,
+      "margin_over_cost_percent": 63,
+      "increase_from_2024_25": 150,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 6,
+      "crop": "Ragi",
+      "variety": null,
+      "msp_2025_26": 4886,
+      "cost_of_production": 3257,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 596,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 7,
+      "crop": "Maize",
+      "variety": null,
+      "msp_2025_26": 2400,
+      "cost_of_production": 1508,
+      "margin_over_cost_percent": 59,
+      "increase_from_2024_25": 175,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 8,
+      "crop": "Tur/Arhar",
+      "variety": null,
+      "msp_2025_26": 8000,
+      "cost_of_production": 5038,
+      "margin_over_cost_percent": 59,
+      "increase_from_2024_25": 450,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 9,
+      "crop": "Moong",
+      "variety": null,
+      "msp_2025_26": 8768,
+      "cost_of_production": 5845,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 86,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 10,
+      "crop": "Urad",
+      "variety": null,
+      "msp_2025_26": 7800,
+      "cost_of_production": 5114,
+      "margin_over_cost_percent": 53,
+      "increase_from_2024_25": 400,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 11,
+      "crop": "Groundnut",
+      "variety": null,
+      "msp_2025_26": 7263,
+      "cost_of_production": 4842,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 480,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 12,
+      "crop": "Sunflower Seed",
+      "variety": null,
+      "msp_2025_26": 7721,
+      "cost_of_production": 5147,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 441,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 13,
+      "crop": "Soybean",
+      "variety": "Yellow",
+      "msp_2025_26": 5328,
+      "cost_of_production": 3552,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 436,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 14,
+      "crop": "Sesamum",
+      "variety": null,
+      "msp_2025_26": 9846,
+      "cost_of_production": 6564,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 579,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 15,
+      "crop": "Nigerseed",
+      "variety": null,
+      "msp_2025_26": 9537,
+      "cost_of_production": 6358,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 820,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 16,
+      "crop": "Cotton",
+      "variety": "Medium Staple",
+      "msp_2025_26": 7710,
+      "cost_of_production": 5140,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 589,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 17,
+      "crop": "Cotton",
+      "variety": "Long Staple",
+      "msp_2025_26": 8110,
+      "cost_of_production": "Not Separately Compiled",
+      "margin_over_cost_percent": null,
+      "increase_from_2024_25": 589,
+      "season": "Kharif"
+    },
+    {
+      "s_no": 18,
+      "crop": "Wheat",
+      "variety": null,
+      "msp_2025_26": 2425,
+      "cost_of_production": 1182,
+      "margin_over_cost_percent": 105,
+      "increase_from_2024_25": 150,
+      "season": "Rabi"
+    },
+    {
+      "s_no": 19,
+      "crop": "Barley",
+      "variety": null,
+      "msp_2025_26": 1980,
+      "cost_of_production": 1239,
+      "margin_over_cost_percent": 60,
+      "increase_from_2024_25": 130,
+      "season": "Rabi"
+    },
+    {
+      "s_no": 20,
+      "crop": "Gram",
+      "variety": null,
+      "msp_2025_26": 5650,
+      "cost_of_production": 3527,
+      "margin_over_cost_percent": 60,
+      "increase_from_2024_25": 210,
+      "season": "Rabi"
+    },
+    {
+      "s_no": 21,
+      "crop": "Lentil (Masur)",
+      "variety": null,
+      "msp_2025_26": 6700,
+      "cost_of_production": 3537,
+      "margin_over_cost_percent": 89,
+      "increase_from_2024_25": 275,
+      "season": "Rabi"
+    },
+    {
+      "s_no": 22,
+      "crop": "Rapeseed & Mustard",
+      "variety": null,
+      "msp_2025_26": 5950,
+      "cost_of_production": 3011,
+      "margin_over_cost_percent": 98,
+      "increase_from_2024_25": 300,
+      "season": "Rabi"
+    },
+    {
+      "s_no": 23,
+      "crop": "Safflower",
+      "variety": null,
+      "msp_2025_26": 5940,
+      "cost_of_production": 3960,
+      "margin_over_cost_percent": 50,
+      "increase_from_2024_25": 140,
+      "season": "Rabi"
+    }],
+
+    "msp_hi": [{
+      "क्र_सं": 1,
+      "फसल": "धान",
+      "किस्म": "सामान्य",
+      "एमएसपी_2025_26": 2369,
+      "उत्पादन_लागत": 1579,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 69,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 2,
+      "फसल": "धान",
+      "किस्म": "ग्रेड ए",
+      "एमएसपी_2025_26": 2389,
+      "उत्पादन_लागत": "अलग से संकलित नहीं",
+      "लागत_पर_मुनाफा_प्रतिशत": null,
+      "2024_25_से_वृद्धि": 69,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 3,
+      "फसल": "ज्वार",
+      "किस्म": "हाइब्रिड",
+      "एमएसपी_2025_26": 3699,
+      "उत्पादन_लागत": 2466,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 328,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 4,
+      "फसल": "ज्वार",
+      "किस्म": "मालदंडी",
+      "एमएसपी_2025_26": 3749,
+      "उत्पादन_लागत": "अलग से संकलित नहीं",
+      "लागत_पर_मुनाफा_प्रतिशत": null,
+      "2024_25_से_वृद्धि": 328,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 5,
+      "फसल": "बाजरा",
+      "किस्म": null,
+      "एमएसपी_2025_26": 2775,
+      "उत्पादन_लागत": 1703,
+      "लागत_पर_मुनाफा_प्रतिशत": 63,
+      "2024_25_से_वृद्धि": 150,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 6,
+      "फसल": "रागी",
+      "किस्म": null,
+      "एमएसपी_2025_26": 4886,
+      "उत्पादन_लागत": 3257,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 596,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 7,
+      "फसल": "मक्का",
+      "किस्म": null,
+      "एमएसपी_2025_26": 2400,
+      "उत्पादन_लागत": 1508,
+      "लागत_पर_मुनाफा_प्रतिशत": 59,
+      "2024_25_से_वृद्धि": 175,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 8,
+      "फसल": "तूर/अरहर",
+      "किस्म": null,
+      "एमएसपी_2025_26": 8000,
+      "उत्पादन_लागत": 5038,
+      "लागत_पर_मुनाफा_प्रतिशत": 59,
+      "2024_25_से_वृद्धि": 450,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 9,
+      "फसल": "मूंग",
+      "किस्म": null,
+      "एमएसपी_2025_26": 8768,
+      "उत्पादन_लागत": 5845,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 86,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 10,
+      "फसल": "उड़द",
+      "किस्म": null,
+      "एमएसपी_2025_26": 7800,
+      "उत्पादन_लागत": 5114,
+      "लागत_पर_मुनाफा_प्रतिशत": 53,
+      "2024_25_से_वृद्धि": 400,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 11,
+      "फसल": "मूंगफली",
+      "किस्म": null,
+      "एमएसपी_2025_26": 7263,
+      "उत्पादन_लागत": 4842,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 480,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 12,
+      "फसल": "सूरजमुखी का बीज",
+      "किस्म": null,
+      "एमएसपी_2025_26": 7721,
+      "उत्पादन_लागत": 5147,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 441,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 13,
+      "फसल": "सोयाबीन",
+      "किस्म": "पीला",
+      "एमएसपी_2025_26": 5328,
+      "उत्पादन_लागत": 3552,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 436,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 14,
+      "फसल": "तिल",
+      "किस्म": null,
+      "एमएसपी_2025_26": 9846,
+      "उत्पादन_लागत": 6564,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 579,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 15,
+      "फसल": "रामतिल",
+      "किस्म": null,
+      "एमएसपी_2025_26": 9537,
+      "उत्पादन_लागत": 6358,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 820,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 16,
+      "फसल": "कपास",
+      "किस्म": "मध्यम रेशा",
+      "एमएसपी_2025_26": 7710,
+      "उत्पादन_लागत": 5140,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 589,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 17,
+      "फसल": "कपास",
+      "किस्म": "लंबा रेशा",
+      "एमएसपी_2025_26": 8110,
+      "उत्पादन_लागत": "अलग से संकलित नहीं",
+      "लागत_पर_मुनाफा_प्रतिशत": null,
+      "2024_25_से_वृद्धि": 589,
+      "मौसम": "खरीफ"
+    },
+    {
+      "क्र_सं": 18,
+      "फसल": "गेहूं",
+      "किस्म": null,
+      "एमएसपी_2025_26": 2425,
+      "उत्पादन_लागत": 1182,
+      "लागत_पर_मुनाफा_प्रतिशत": 105,
+      "2024_25_से_वृद्धि": 150,
+      "मौसम": "रबी"
+    },
+    {
+      "क्र_सं": 19,
+      "फसल": "जौ",
+      "किस्म": null,
+      "एमएसपी_2025_26": 1980,
+      "उत्पादन_लागत": 1239,
+      "लागत_पर_मुनाफा_प्रतिशत": 60,
+      "2024_25_से_वृद्धि": 130,
+      "मौसम": "रबी"
+    },
+    {
+      "क्र_सं": 20,
+      "फसल": "चना",
+      "किस्म": null,
+      "एमएसपी_2025_26": 5650,
+      "उत्पादन_लागत": 3527,
+      "लागत_पर_मुनाफा_प्रतिशत": 60,
+      "2024_25_से_वृद्धि": 210,
+      "मौसम": "रबी"
+    },
+    {
+      "क्र_सं": 21,
+      "फसल": "मसूर",
+      "किस्म": null,
+      "एमएसपी_2025_26": 6700,
+      "उत्पादन_लागत": 3537,
+      "लागत_पर_मुनाफा_प्रतिशत": 89,
+      "2024_25_से_वृद्धि": 275,
+      "मौसम": "रबी"
+    },
+    {
+      "क्र_सं": 22,
+      "फसल": "तोरिया और सरसों",
+      "किस्म": null,
+      "एमएसपी_2025_26": 5950,
+      "उत्पादन_लागत": 3011,
+      "लागत_पर_मुनाफा_प्रतिशत": 98,
+      "2024_25_से_वृद्धि": 300,
+      "मौसम": "रबी"
+    },
+    {
+      "क्र_सं": 23,
+      "फसल": "कुसुम",
+      "किस्म": null,
+      "एमएसपी_2025_26": 5940,
+      "उत्पादन_लागत": 3960,
+      "लागत_पर_मुनाफा_प्रतिशत": 50,
+      "2024_25_से_वृद्धि": 140,
+      "मौसम": "रबी"
+    }
+  ]
+}

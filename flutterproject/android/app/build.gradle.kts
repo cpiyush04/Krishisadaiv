@@ -28,6 +28,11 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        // This block is essential for packaging the native PyTorch libraries.
+        ndk {
+            abiFilters.addAll(listOf("arm64-v8a", "armeabi-v7a", "x86_64", "x86"))
+        }
     }
 
     buildTypes {
@@ -36,9 +41,20 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
         }
+	getByName("release") {
+            //...
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
     }
 }
 
+
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Switched to the full PyTorch libraries for troubleshooting.
+    implementation("org.pytorch:pytorch_android:2.1.0")
+    implementation("org.pytorch:pytorch_android_torchvision:2.1.0")
 }

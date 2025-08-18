@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
+// Data model for a single crop, updated to match the new JSON structure.
 class Crop {
   final String name;
   final String variety;
@@ -10,8 +11,7 @@ class Crop {
   final String costOfProduction;
   final String marginOverCost;
   final String increaseFrom2024_25;
-  final String mspIn2013_14;
-  final String increaseFrom2013_14;
+  final String season;
 
   const Crop({
     required this.name,
@@ -20,25 +20,25 @@ class Crop {
     required this.costOfProduction,
     required this.marginOverCost,
     required this.increaseFrom2024_25,
-    required this.mspIn2013_14,
-    required this.increaseFrom2013_14,
+    required this.season,
   });
 
+  // Factory constructor to parse JSON map into a Crop object.
+  // Handles both English and Hindi keys correctly.
   factory Crop.fromJson(Map<String, dynamic> json, bool isEnglish) {
-    // Helper to format values consistently
+    // Helper to format values consistently and handle nulls.
     String getValue(String key, {String prefix = '', String suffix = ''}) {
       return '$prefix${json[key]?.toString() ?? 'N/A'}$suffix';
     }
 
     return Crop(
-      name: getValue(isEnglish ? 'crop' : 'fasal'),
-      variety: getValue(isEnglish ? 'variety' : 'kism'),
-      msp2025_26: getValue(isEnglish ? 'msp_2025_26' : 'msp_2025_26', prefix: '₹'),
-      costOfProduction: getValue(isEnglish ? 'cost_of_production' : 'utpadan_lagat', prefix: '₹'),
-      marginOverCost: getValue(isEnglish ? 'margin_over_cost_percent' : 'lagat_par_margin_pratishat', suffix: '%'),
-      increaseFrom2024_25: getValue(isEnglish ? 'increase_from_2024_25' : '2024_25_se_vriddhi', prefix: '₹'),
-      mspIn2013_14: getValue(isEnglish ? 'msp_in_2013_14' : 'msp_2013_14_mein', prefix: '₹'),
-      increaseFrom2013_14: getValue(isEnglish ? 'increase_from_2013_14_percent' : '2013_14_se_vriddhi_pratishat', suffix: '%'),
+      name: getValue(isEnglish ? 'crop' : 'फसल'),
+      variety: getValue(isEnglish ? 'variety' : 'किस्म'),
+      msp2025_26: getValue(isEnglish ? 'msp_2025_26' : 'एमएसपी_2025_26', prefix: '₹'),
+      costOfProduction: getValue(isEnglish ? 'cost_of_production' : 'उत्पादन_लागत', prefix: '₹'),
+      marginOverCost: getValue(isEnglish ? 'margin_over_cost_percent' : 'लागत_पर_मुनाफा_प्रतिशत', suffix: '%'),
+      increaseFrom2024_25: getValue(isEnglish ? 'increase_from_2024_25' : '2024_25_से_वृद्धि', prefix: '₹'),
+      season: getValue(isEnglish ? 'season' : 'मौसम'),
     );
   }
 }
@@ -59,6 +59,22 @@ class _MspScreenState extends State<MspScreen> {
   bool _speechEnabled = false;
   bool _isListening = false;
 
+  // Manual mapping for transliterations and common aliases to improve search.
+  final Map<String, List<String>> _cropAliases = {
+    'धान': ['dhan', 'chawal', 'paddy'],
+    'गेहूं': ['gehun', 'wheat'],
+    'ज्वार': ['jowar', 'sorghum'],
+    'बाजरा': ['bajra', 'pearl millet'],
+    'मक्का': ['makka', 'maize', 'corn'],
+    'तूर/अरहर': ['tur', 'arhar', 'pigeon pea'],
+    'मूंग': ['moong', 'mung'],
+    'उड़द': ['urad'],
+    'मूंगफली': ['moongfali', 'groundnut', 'peanut'],
+    'सोयाबीन': ['soyabean'],
+    'कपास': ['kapas', 'cotton'],
+    'चना': ['chana', 'gram', 'chickpea'],
+  };
+
   @override
   void initState() {
     super.initState();
@@ -66,11 +82,13 @@ class _MspScreenState extends State<MspScreen> {
     _initSpeech();
   }
 
+  // Loads and decodes the MSP data from the local JSON asset.
   Future<void> _loadMspData() async {
     final String response = await rootBundle.loadString('assets/msp.json');
     final data = await json.decode(response);
     bool isEnglish = widget.selectedLanguage == 'English';
-    final key = isEnglish ? 'kharif_msp_2025_26_english' : 'kharif_msp_2025_26_hindi';
+    // Uses the corrected top-level keys from the updated JSON.
+    final key = isEnglish ? 'msp_en' : 'msp_hi';
 
     if (mounted) {
       setState(() {
@@ -80,31 +98,65 @@ class _MspScreenState extends State<MspScreen> {
     }
   }
 
+  // Initializes the speech-to-text engine.
   void _initSpeech() async {
     _speechEnabled = await _speechToText.initialize();
     if (mounted) setState(() {});
   }
 
+  // Starts listening for voice input, specifying the correct language.
   void _startListening() async {
-    await _speechToText.listen(onResult: (result) {
-      _searchController.text = result.recognizedWords;
-      _filterCrops(result.recognizedWords);
-    });
+    String localeId = widget.selectedLanguage == 'English' ? 'en_US' : 'hi_IN';
+
+    await _speechToText.listen(
+      onResult: (result) {
+        _searchController.text = result.recognizedWords;
+        _filterCrops(result.recognizedWords);
+      },
+      // Ensures voice input in Hindi is recognized in Devanagari script.
+      localeId: localeId,
+    );
     setState(() => _isListening = true);
   }
 
+  // Stops the voice input listener.
   void _stopListening() async {
     await _speechToText.stop();
     setState(() => _isListening = false);
   }
 
+  // Filters the crop list based on a search query.
+  // This enhanced version checks the crop name, variety, and a list of aliases.
   void _filterCrops(String query) {
     if (query.isEmpty) {
       setState(() => _displayedCrops = _allCrops);
       return;
     }
+
+    final lowerCaseQuery = query.toLowerCase();
+
     setState(() {
-      _displayedCrops = _allCrops.where((crop) => crop.name.toLowerCase().contains(query.toLowerCase())).toList();
+      _displayedCrops = _allCrops.where((crop) {
+        // 1. Check the crop's actual name.
+        final nameMatches = crop.name.toLowerCase().contains(lowerCaseQuery);
+        // 2. Check the crop's variety.
+        final varietyMatches = crop.variety.toLowerCase().contains(lowerCaseQuery);
+
+        if (nameMatches || varietyMatches) {
+          return true;
+        }
+
+        // 3. If the language is Hindi, check our alias map for transliterations.
+        if (widget.selectedLanguage != 'English') {
+          final aliases = _cropAliases[crop.name];
+          if (aliases != null) {
+            // Check if any alias in the list contains the search query.
+            return aliases.any((alias) => alias.toLowerCase().contains(lowerCaseQuery));
+          }
+        }
+
+        return false;
+      }).toList();
     });
   }
 
@@ -119,7 +171,7 @@ class _MspScreenState extends State<MspScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // --- UPDATED TEXTFIELD ---
+            // Search text field
             TextField(
               controller: _searchController,
               onChanged: _filterCrops,
@@ -146,6 +198,7 @@ class _MspScreenState extends State<MspScreen> {
               ),
             ),
             const SizedBox(height: 20),
+            // List of crops
             Expanded(
               child: _allCrops.isEmpty
                   ? const Center(child: CircularProgressIndicator())
@@ -155,7 +208,6 @@ class _MspScreenState extends State<MspScreen> {
                           itemCount: _displayedCrops.length,
                           itemBuilder: (context, index) {
                             final crop = _displayedCrops[index];
-                            // --- UPDATED CARD ---
                             return Card(
                               elevation: 2,
                               margin: const EdgeInsets.only(bottom: 16),
@@ -174,6 +226,7 @@ class _MspScreenState extends State<MspScreen> {
                                         color: Colors.green.shade900,
                                       ),
                                     ),
+                                    _buildInfoRow(widget.selectedLanguage == 'English' ? 'Season' : 'मौसम', crop.season),
                                     Divider(
                                       height: 24,
                                       color: Colors.green.shade200,
@@ -181,10 +234,7 @@ class _MspScreenState extends State<MspScreen> {
                                     _buildInfoRow(widget.selectedLanguage == 'English' ? 'MSP (2025-26)' : 'एमएसपी (2025-26)', crop.msp2025_26),
                                     _buildInfoRow(widget.selectedLanguage == 'English' ? 'Cost of Production' : 'उत्पादन लागत', crop.costOfProduction),
                                     _buildInfoRow(widget.selectedLanguage == 'English' ? 'Margin Over Cost' : 'लागत पर मार्जिन', crop.marginOverCost),
-                                    const SizedBox(height: 10),
                                     _buildInfoRow(widget.selectedLanguage == 'English' ? 'Increase from 2024-25' : '2024-25 से वृद्धि', crop.increaseFrom2024_25),
-                                    _buildInfoRow(widget.selectedLanguage == 'English' ? 'MSP in 2013-14' : '2013-14 में एमएसपी', crop.mspIn2013_14),
-                                    _buildInfoRow(widget.selectedLanguage == 'English' ? '% Increase from 2013-14' : '2013-14 से % वृद्धि', crop.increaseFrom2013_14),
                                   ],
                                 ),
                               ),
@@ -198,13 +248,14 @@ class _MspScreenState extends State<MspScreen> {
     );
   }
 
+  // Helper widget to build a labeled row of information.
   Widget _buildInfoRow(String label, String value) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: TextStyle(color: Colors.grey[700])), // Slightly darker grey for better contrast
+          Text(label, style: TextStyle(color: Colors.grey[700])),
           Text(value, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
         ],
       ),
