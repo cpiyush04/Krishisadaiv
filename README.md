@@ -62,7 +62,7 @@ This app integrates a **Fine-tuned Vision Transformer (ViT)** model for crop dis
 | **Wheat**        |    Brown Rust             |
 |                  |    Yellow Rust            |
 |                  |    Healthy                |
-| **Other crop**   |    Healthy                |
+| **Other crop**   |    Invalid                |
 | (Invalid Image)  |                           |
 ```
 
